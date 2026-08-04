@@ -1,0 +1,36 @@
+{
+	"name": "atomic-it",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"build": "node .config/scripts/run-check.mjs build nuxt build",
+		"dev": "node .config/scripts/run-check.mjs dev nuxt dev",
+		"generate": "node .config/scripts/run-check.mjs generate nuxt generate",
+		"preview": "node .config/scripts/run-check.mjs preview nuxt preview",
+		"postinstall": "node .config/scripts/run-check.mjs postinstall nuxt prepare",
+		"check": "node .config/scripts/run-check.mjs check biome check .",
+		"slint": "node .config/scripts/run-check.mjs slint stylelint \"**/*.{css,scss}\"",
+		"write": "node .config/scripts/run-check.mjs write biome check --write .",
+		"typeslint": "node .config/scripts/run-check.mjs typeslint nuxt typecheck",
+		"prepare": "node .config/scripts/run-check.mjs prepare husky",
+		"tsc": "tsc --check --noEmit"
+	},
+	"dependencies": {
+		"animejs": "^4.5.0",
+		"nuxt": "^4.5.1",
+		"vue": "^3.5.40",
+		"vue-router": "^5.2.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.5.5",
+		"husky": "^9.1.7",
+		"postcss-html": "^1.8.1",
+		"sass": "^1.102.0",
+		"stylelint": "^17.14.1",
+		"stylelint-config-html": "^1.1.0",
+		"stylelint-config-recommended-vue": "^1.6.1",
+		"stylelint-config-standard-scss": "^17.0.0",
+		"typescript": "^5.9.3",
+		"vue-tsc": "^3.3.8"
+	}
+}
