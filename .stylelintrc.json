@@ -7,7 +7,15 @@
     "at-rule-no-unknown": null,
     "selector-pseudo-class-no-unknown": null,
     "scss/comment-no-empty": null,
-    "no-descending-specificity": null
+    "no-descending-specificity": null,
+    "selector-class-pattern": null,
+    "scss/dollar-variable-empty-line-before": [
+      "always",
+      {
+        "except": ["first-nested", "after-comment", "after-dollar-variable"],
+        "ignore": ["after-comment", "inside-single-line-block"]
+      }
+    ]
   },
   "ignoreFiles": ["**/*.vue"]
 }

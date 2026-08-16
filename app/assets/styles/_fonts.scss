@@ -1,9 +1,10 @@
-// Fonts
-$font-sans: "Segoe UI", system-ui, sans-serif;
-$font-mono: "Cascadia Code", "Fira Code", ui-monospace, monospace;
-
-// Font sizes
-$font-size-sm: 0.875rem;
-$font-size-md: 1rem;
-$font-size-lg: 1.25rem;
+$font-display: "Outfit", "Segoe UI", system-ui, sans-serif;
+$font-sans: "Outfit", "Segoe UI", system-ui, sans-serif;
+$font-mono: "Outfit", "Segoe UI", system-ui, sans-serif;
+$font-size-sm: 0.92rem;
+$font-size-md: 1.05rem;
+$font-size-lg: 1.2rem;
 $font-size-xl: 1.5rem;
+$font-size-hero: clamp(3rem, 8vw, 5.6rem);
+$font-size-section: clamp(2.2rem, 5vw, 3.75rem);
+$font-size-brand: 1.15rem;

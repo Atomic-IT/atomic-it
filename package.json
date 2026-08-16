@@ -16,6 +16,8 @@
 		"tsc": "tsc --check --noEmit"
 	},
 	"dependencies": {
+		"@nuxt/fonts": "^0.14.0",
+		"@nuxtjs/i18n": "^10.6.0",
 		"animejs": "^4.5.0",
 		"nuxt": "^4.5.1",
 		"vue": "^3.5.40",

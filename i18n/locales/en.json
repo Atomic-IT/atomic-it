@@ -1,0 +1,205 @@
+{
+  "meta": {
+    "title": "Websites for local businesses",
+    "description": "Atomic IT builds modern websites for small businesses. Clear pricing, simple process, no tech jargon."
+  },
+  "nav": {
+    "services": "Services",
+    "process": "How we work",
+    "work": "Work",
+    "contact": "Contact",
+    "book": "Free call",
+    "quote": "Ask for a quote"
+  },
+  "hero": {
+    "badge": "Websites · clear pricing · no jargon",
+    "titleLine1": "Your website.",
+    "titleLine2": "Without the stress.",
+    "lead": "Modern websites for local businesses and professionals. One person, one owner: from the first call to launch.",
+    "ctaPrimary": "Book a free call",
+    "ctaSecondary": "Message on WhatsApp",
+    "formTitle": "Ask for a quote",
+    "pills": {
+      "a": "No jargon",
+      "b": "Clear pricing",
+      "c": "Same-day reply"
+    }
+  },
+  "trusted": {
+    "label": "Who we help",
+    "title": "Built for people who show up in person.",
+    "lead": "Clinics, salons, workshops, law firms, local services — businesses where trust starts face to face, then continues online.",
+    "items": {
+      "a": {
+        "name": "Clinics",
+        "hint": "Doctors, dentists, therapists"
+      },
+      "b": {
+        "name": "Salons",
+        "hint": "Beauty, hair, wellness"
+      },
+      "c": {
+        "name": "Workshops",
+        "hint": "Crafts, repairs, makers"
+      },
+      "d": {
+        "name": "Law firms",
+        "hint": "Solicitors and advisors"
+      },
+      "e": {
+        "name": "Local services",
+        "hint": "Trades and neighborhood shops"
+      }
+    }
+  },
+  "stats": {
+    "items": {
+      "a": { "value": "3", "label": "clear ways to work together" },
+      "b": { "value": "1", "label": "person from start to finish" },
+      "c": { "value": "24h", "label": "for the first reply" },
+      "d": { "value": "0", "label": "tech chaos" }
+    }
+  },
+  "services": {
+    "eyebrow": "What we do",
+    "title": "A site that works.\nNot just looks pretty.",
+    "lead": "Three services, one goal: make it easy for customers to find you and get in touch.",
+    "items": {
+      "new": {
+        "title": "New business website",
+        "text": "From scratch: design, copy, mobile, and launch. Simple and modern.",
+        "cta": "Learn more"
+      },
+      "refresh": {
+        "title": "Website refresh",
+        "text": "Have a site that isn’t helping? We’ll clean it up and modernize it.",
+        "cta": "Learn more"
+      },
+      "care": {
+        "title": "Care after launch",
+        "text": "Updates, copy tweaks, and small changes — one contact, clear rules.",
+        "cta": "Learn more"
+      }
+    }
+  },
+  "problem": {
+    "eyebrow": "The problem",
+    "title": "A website done\n“on the side” doesn’t sell.",
+    "lead": "Too often it’s rushed, looks cheap, and nobody knows how to maintain it. You don’t need another promise — you need clear ownership.",
+    "beforeLabel": "Usual path",
+    "afterLabel": "Atomic IT",
+    "badTitle": "The usual mess",
+    "goodTitle": "With Atomic IT",
+    "beforeCaption": "Scattered ownership, vague quotes, and a site that doesn’t earn trust.",
+    "afterCaption": "One person, clear price, visible progress — from first call to launch.",
+    "bridge": "VS",
+    "bad": {
+      "a": "An old site — or none at all",
+      "b": "Nobody explains things plainly",
+      "c": "Unclear who owns the project",
+      "d": "Updates drag on for weeks"
+    },
+    "good": {
+      "a": "One person runs the whole thing",
+      "b": "Clear pricing before we start",
+      "c": "You see progress along the way",
+      "d": "Help after launch too"
+    }
+  },
+  "steps": {
+    "eyebrow": "How we work",
+    "title": "From the first message\nto a live website.",
+    "lead": "Three steps. Clear price before we start. No dragging it out.",
+    "ctaHint": "Free quote. No obligation.",
+    "items": {
+      "talk": {
+        "step": "01",
+        "time": "20 minutes",
+        "title": "We talk",
+        "text": "A short call about your business and needs. Then you get a clear quote — no pressure."
+      },
+      "build": {
+        "step": "02",
+        "time": "Design & build",
+        "title": "We build",
+        "text": "Design, copy, and development in one place. You see the site take shape as we go."
+      },
+      "live": {
+        "step": "03",
+        "time": "Go live",
+        "title": "We launch",
+        "text": "We publish calmly and stay available when something needs changing."
+      }
+    }
+  },
+  "work": {
+    "eyebrow": "Work",
+    "title": "Simple websites.\nClear outcomes.",
+    "lead": "Example directions for local businesses — so the site helps people get in touch.",
+    "items": {
+      "a": {
+        "tag": "Clinic",
+        "title": "A clear service site",
+        "text": "Offer, trust, and easy contact on mobile."
+      },
+      "b": {
+        "tag": "Salon",
+        "title": "A modern calling card",
+        "text": "A first impression that feels solid."
+      },
+      "c": {
+        "tag": "Workshop",
+        "title": "A site with a clear CTA",
+        "text": "What you do, who it’s for, and how to reach you."
+      }
+    }
+  },
+  "fit": {
+    "eyebrow": "Heads up",
+    "title": "Not for everyone.\nAnd that’s fine.",
+    "lead": "It works best with trust and collaboration. Better to say it upfront.",
+    "noBadge": "No",
+    "yesBadge": "Yes",
+    "noTitle": "Probably not if",
+    "yesTitle": "We’ll get along if",
+    "no": {
+      "a": "You want miracles for zero budget",
+      "b": "You can’t spare a moment for short decisions",
+      "c": "You want to control every pixel for months"
+    },
+    "yes": {
+      "a": "You know what you do and who you serve",
+      "b": "You want a site that builds trust",
+      "c": "You hand over the “how” and judge the result"
+    }
+  },
+  "cta": {
+    "eyebrow": "Start here",
+    "title": "Book a free\n20-minute call.",
+    "lead": "We’ll talk about your business, where you are, and where you want to go. If I can help, I’ll say how. If not, you’ll hear that too.",
+    "points": {
+      "a": { "title": "Same-day reply", "text": "You won’t wait for weeks" },
+      "b": { "title": "No pressure", "text": "The call is free" },
+      "c": {
+        "title": "You talk to a real person",
+        "text": "Not a sales department"
+      }
+    },
+    "book": "Book a call",
+    "whatsapp": "Message on WhatsApp",
+    "or": "or send a message",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "What do you need?",
+      "submit": "Send message",
+      "sending": "Sending…",
+      "success": "Thanks! We opened your email app — send the message and we’ll get back to you.",
+      "error": "Please add your name, a valid email, and a short message."
+    }
+  },
+  "footer": {
+    "tagline": "Websites for businesses that prefer calm over tech chaos.",
+    "rights": "All rights reserved."
+  }
+}
