@@ -24,6 +24,10 @@ onMounted(() => {
       el.style.opacity = '1'
       el.style.transform = 'none'
     })
+    panels.forEach((el) => {
+      el.style.opacity = '1'
+      el.style.transform = 'none'
+    })
     return
   }
 
@@ -132,60 +136,53 @@ onBeforeUnmount(() => observer?.disconnect())
 
   &-rail {
     display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: minmax(15.5rem, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0;
-    overflow-x: auto;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
     border-top: 1px solid rgb(15 23 42 / 10%);
-    scrollbar-width: none;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
 
     @include breakpoint(md) {
-      grid-auto-flow: unset;
-      grid-template-columns: repeat(5, 1fr);
-      overflow: visible;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
     }
   }
 
   &-panel {
     position: relative;
+    z-index: 0;
     display: grid;
     align-content: end;
-    min-height: 22rem;
-    padding: 1.35rem;
+    aspect-ratio: 1;
+    min-width: 0;
+    margin: 0 0 -1px;
+    padding: 1.1rem;
     overflow: hidden;
-    border-right: 1px solid rgb(255 255 255 / 18%);
-    scroll-snap-align: start;
+    background: #0b0d12;
+    box-shadow: inset -1px 0 0 rgb(255 255 255 / 18%);
     opacity: 0;
     isolation: isolate;
 
-    &:last-child {
-      border-right: 0;
-    }
-
     &:hover .trusted-photo {
-      transform: scale(1.08);
+      transform: scale(1.06);
     }
 
     @include breakpoint(md) {
-      min-height: 28rem;
+      margin: 0;
       padding: 1.6rem;
+
+      &:last-child {
+        box-shadow: none;
+      }
     }
   }
 
   &-photo {
     position: absolute;
-    inset: 0;
+    inset: -1px;
     z-index: -2;
-    width: 100%;
-    height: 100%;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    max-width: none;
     object-fit: cover;
+    object-position: center 42%;
     transform: scale(1.02);
     transition: transform 0.7s ease;
   }
@@ -207,10 +204,10 @@ onBeforeUnmount(() => observer?.disconnect())
 
   &-meta {
     display: grid;
-    gap: 0.3rem;
+    gap: 0.25rem;
 
     strong {
-      font-size: clamp(1.35rem, 2.2vw, 1.7rem);
+      font-size: clamp(1.15rem, 4.2vw, 1.7rem);
       font-weight: 800;
       letter-spacing: -0.04em;
       color: #fff;
@@ -219,7 +216,7 @@ onBeforeUnmount(() => observer?.disconnect())
 
     span {
       color: rgb(255 255 255 / 82%);
-      font-size: 0.95rem;
+      font-size: clamp(0.82rem, 2.8vw, 0.95rem);
       font-weight: 600;
     }
   }

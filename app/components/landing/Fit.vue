@@ -10,13 +10,7 @@ const { root } = useAnimeReveal({ y: 24, staggerMs: 80 })
       <div class="fit-intro">
         <p class="section-eyebrow reveal">{{ $t('fit.eyebrow') }}</p>
         <h2 id="fit-title" class="section-title reveal">
-          <span
-            v-for="(line, index) in $t('fit.title').split('\n')"
-            :key="index"
-            class="fit-title-line"
-          >
-            {{ line }}
-          </span>
+          {{ $t('fit.title') }}
         </h2>
         <p class="section-lead reveal">{{ $t('fit.lead') }}</p>
       </div>
@@ -57,14 +51,6 @@ const { root } = useAnimeReveal({ y: 24, staggerMs: 80 })
   background:
     radial-gradient(circle at 100% 0%, rgb(24 73 214 / 10%), transparent 38%),
     #f3f5f8;
-
-  &-title-line {
-    display: block;
-  }
-
-  &-intro {
-    max-width: 40rem;
-  }
 
   &-grid {
     display: grid;

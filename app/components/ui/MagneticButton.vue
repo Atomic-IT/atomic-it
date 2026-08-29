@@ -5,17 +5,28 @@ const props = withDefaults(
     type?: 'button' | 'submit'
     variant?: 'primary' | 'ghost' | 'soft' | 'dark'
     external?: boolean
+    block?: boolean
+    compact?: boolean
+    disabled?: boolean
   }>(),
   {
     href: undefined,
     type: 'button',
     variant: 'primary',
     external: false,
+    block: false,
+    compact: false,
+    disabled: false,
   }
 )
 
-const { el, onMove, onEnter, onLeave } = useMagneticButton(14)
-const classes = computed(() => ['m-btn', `m-btn-${props.variant}`])
+const { el, onEnter } = useMagneticButton()
+const classes = computed(() => [
+  'm-btn',
+  `m-btn-${props.variant}`,
+  props.block ? 'm-btn-block' : '',
+  props.compact ? 'm-btn-compact' : '',
+])
 </script>
 
 <template>
@@ -26,9 +37,7 @@ const classes = computed(() => ['m-btn', `m-btn-${props.variant}`])
     :href="href"
     :target="external ? '_blank' : undefined"
     :rel="external ? 'noopener noreferrer' : undefined"
-    @mousemove="onMove"
     @mouseenter="onEnter"
-    @mouseleave="onLeave"
   >
     <span class="m-btn-shine" aria-hidden="true" />
     <span class="m-btn-label"><slot /></span>
@@ -38,9 +47,8 @@ const classes = computed(() => ['m-btn', `m-btn-${props.variant}`])
     ref="el"
     :class="classes"
     :type="type"
-    @mousemove="onMove"
+    :disabled="disabled"
     @mouseenter="onEnter"
-    @mouseleave="onLeave"
   >
     <span class="m-btn-shine" aria-hidden="true" />
     <span class="m-btn-label"><slot /></span>
@@ -76,6 +84,9 @@ const classes = computed(() => ['m-btn', `m-btn-${props.variant}`])
   &-label {
     position: relative;
     z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
   }
 
   &-shine {
@@ -126,6 +137,22 @@ const classes = computed(() => ['m-btn', `m-btn-${props.variant}`])
     &:hover {
       background: #151b2b;
     }
+  }
+
+  &-block {
+    width: 100%;
+  }
+
+  &-compact {
+    min-height: 2.75rem;
+    padding: 0.65rem 1.15rem;
+    font-size: 0.95rem;
+  }
+
+  &:disabled {
+    opacity: 0.65;
+    cursor: wait;
+    pointer-events: none;
   }
 }
 </style>

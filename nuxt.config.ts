@@ -2,6 +2,9 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
+  nitro: {
+    preset: 'cloudflare_module',
+  },
   modules: ['@nuxt/fonts', '@nuxtjs/i18n'],
   css: ['~/assets/styles/main.scss'],
   components: [
@@ -35,10 +38,10 @@ export default defineNuxtConfig({
     },
   },
   runtimeConfig: {
+    resendApiKey: '',
     public: {
-      calendlyUrl: 'https://calendly.com/',
-      contactEmail: 'hello@atomic-it.pl',
-      whatsappUrl: 'https://wa.me/',
+      contactEmail: 'info@atomic-it.site',
+      whatsappUrl: 'https://wa.me/48798733368',
     },
   },
   vite: {
@@ -60,6 +63,18 @@ export default defineNuxtConfig({
     head: {
       titleTemplate: '%s · Atomic IT',
       htmlAttrs: { lang: 'pl' },
+      script: [
+        {
+          src: 'https://www.googletagmanager.com/gtag/js?id=AW-18392809045',
+          async: true,
+        },
+        {
+          innerHTML: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-18392809045');`,
+        },
+      ],
     },
   },
 })

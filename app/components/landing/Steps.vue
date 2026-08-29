@@ -21,13 +21,7 @@ const { root } = useAnimeReveal({ y: 28, staggerMs: 90 })
       <div class="steps-intro">
         <p class="section-eyebrow reveal">{{ $t('steps.eyebrow') }}</p>
         <h2 id="steps-title" class="section-title reveal">
-          <span
-            v-for="(line, index) in $t('steps.title').split('\n')"
-            :key="index"
-            class="steps-title-line"
-          >
-            {{ line }}
-          </span>
+          {{ $t('steps.title') }}
         </h2>
         <p class="section-lead reveal">{{ $t('steps.lead') }}</p>
       </div>
@@ -62,9 +56,9 @@ const { root } = useAnimeReveal({ y: 28, staggerMs: 90 })
       </ol>
 
       <div class="steps-cta reveal">
-        <a class="steps-btn" :href="`${localePath('/')}#contact`">
+        <MagneticButton :href="`${localePath('/')}#contact`" variant="primary">
           {{ $t('nav.quote') }}
-        </a>
+        </MagneticButton>
         <p>{{ $t('steps.ctaHint') }}</p>
       </div>
     </div>
@@ -77,12 +71,7 @@ const { root } = useAnimeReveal({ y: 28, staggerMs: 90 })
     radial-gradient(circle at 0% 10%, rgb(24 73 214 / 10%), transparent 34%),
     linear-gradient(180deg, #eef3fb 0%, #f7f9fc 100%);
 
-  &-title-line {
-    display: block;
-  }
-
   &-intro {
-    max-width: 40rem;
     margin-bottom: $space-xl;
   }
 
@@ -197,28 +186,6 @@ const { root } = useAnimeReveal({ y: 28, staggerMs: 90 })
       margin: 0;
       color: $color-fg-muted;
       font-weight: 600;
-    }
-  }
-
-  &-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 3.4rem;
-    padding: 0.9rem 1.55rem;
-    border-radius: 999px;
-    background: #1849d6;
-    color: #fff;
-    font-size: 1.05rem;
-    font-weight: 700;
-    box-shadow: 0 16px 36px rgb(24 73 214 / 28%);
-    transition:
-      background-color 0.2s ease,
-      transform 0.2s ease;
-
-    &:hover {
-      background: #1239b0;
-      transform: translateY(-1px);
     }
   }
 }

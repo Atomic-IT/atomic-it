@@ -21,8 +21,6 @@ useSeoMeta({
     <main>
       <Hero />
       <Trusted />
-      <Stats />
-      <Services />
       <Problem />
       <Steps />
       <Work />

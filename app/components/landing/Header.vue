@@ -1,10 +1,9 @@
 <script setup lang="ts">
 const localePath = useLocalePath()
-const config = useRuntimeConfig()
+const { openContactDialog } = useContactDialog()
 const compact = ref(false)
 
 const links = computed(() => [
-  { href: `${localePath('/')}#services`, label: 'nav.services' },
   { href: `${localePath('/')}#process`, label: 'nav.process' },
   { href: `${localePath('/')}#work`, label: 'nav.work' },
   { href: `${localePath('/')}#contact`, label: 'nav.contact' },
@@ -37,20 +36,14 @@ onMounted(() => {
       </nav>
 
       <div class="header-actions">
-        <a
-          class="header-btn header-btn-ghost"
-          :href="`${localePath('/')}#contact`"
+        <MagneticButton
+          compact
+          class="header-cta"
+          variant="dark"
+          @click="openContactDialog"
         >
           {{ $t('nav.quote') }}
-        </a>
-        <a
-          class="header-btn header-btn-dark"
-          :href="config.public.calendlyUrl"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {{ $t('nav.book') }}
-        </a>
+        </MagneticButton>
       </div>
     </div>
   </header>
@@ -61,7 +54,7 @@ onMounted(() => {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgb(251 252 254 / 78%);
+  background: rgb(219 230 255 / 72%);
   backdrop-filter: blur(16px);
 
   &-compact {
@@ -109,50 +102,6 @@ onMounted(() => {
 
     @include breakpoint(md) {
       margin-left: 0;
-    }
-  }
-
-  &-btn {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    min-height: 2.75rem;
-    padding: 0.65rem 1.15rem;
-    border: 1.5px solid transparent;
-    border-radius: 999px;
-    font-size: 0.95rem;
-    font-weight: 700;
-    line-height: 1;
-    text-decoration: none;
-    cursor: pointer;
-    transition:
-      background-color 0.2s ease,
-      color 0.2s ease,
-      border-color 0.2s ease;
-
-    @include breakpoint(md) {
-      display: inline-flex;
-    }
-
-    &-ghost {
-      background: #fff;
-      border-color: #64748b;
-      color: #070b14;
-
-      &:hover {
-        border-color: #1849d6;
-        color: #1849d6;
-      }
-    }
-
-    &-dark {
-      background: #070b14;
-      color: #fff;
-
-      &:hover {
-        background: #1849d6;
-        color: #fff;
-      }
     }
   }
 }

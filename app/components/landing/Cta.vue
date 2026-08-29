@@ -2,7 +2,6 @@
 const config = useRuntimeConfig()
 const { root } = useAnimeReveal()
 
-const calendlyUrl = computed(() => config.public.calendlyUrl as string)
 const whatsappUrl = computed(() => config.public.whatsappUrl as string)
 const points = ['a', 'b', 'c'] as const
 </script>
@@ -15,16 +14,10 @@ const points = ['a', 'b', 'c'] as const
     aria-labelledby="cta-title"
   >
     <div class="container cta-layout">
-      <div>
+      <div class="cta-copy">
         <p class="section-eyebrow reveal">{{ $t('cta.eyebrow') }}</p>
         <h2 id="cta-title" class="section-title reveal">
-          <span
-            v-for="(line, index) in $t('cta.title').split('\n')"
-            :key="index"
-            class="cta-title-line"
-          >
-            {{ line }}
-          </span>
+          {{ $t('cta.title') }}
         </h2>
         <p class="section-lead reveal">{{ $t('cta.lead') }}</p>
 
@@ -36,10 +29,8 @@ const points = ['a', 'b', 'c'] as const
         </ul>
 
         <div class="cta-actions reveal">
-          <MagneticButton :href="calendlyUrl" variant="primary" external>
-            {{ $t('cta.book') }}
-          </MagneticButton>
-          <MagneticButton :href="whatsappUrl" variant="ghost" external>
+          <MagneticButton :href="whatsappUrl" variant="primary" external>
+            <WhatsAppIcon />
             {{ $t('cta.whatsapp') }}
           </MagneticButton>
         </div>
@@ -49,7 +40,6 @@ const points = ['a', 'b', 'c'] as const
         class="reveal"
         :title="$t('cta.or')"
         title-id="cta-form-title"
-        :rows="4"
       />
     </div>
   </section>
@@ -61,24 +51,33 @@ const points = ['a', 'b', 'c'] as const
     radial-gradient(circle at 0% 0%, rgb(24 73 214 / 10%), transparent 40%),
     #fff;
 
-  &-title-line {
-    display: block;
-  }
-
   &-layout {
     display: grid;
     gap: $space-xl;
+    align-items: center;
 
     @include breakpoint(md) {
-      grid-template-columns: 1.05fr 0.95fr;
-      align-items: start;
+      grid-template-columns: 1fr 1fr;
+      gap: $space-2xl;
+    }
+  }
+
+  &-copy {
+    display: grid;
+    align-content: center;
+    gap: $space-md;
+
+    .section-eyebrow,
+    .section-title,
+    .section-lead {
+      margin: 0;
     }
   }
 
   &-points {
     display: grid;
-    gap: 1rem;
-    margin: $space-xl 0;
+    gap: 0.85rem;
+    margin: 0.25rem 0;
     padding: 0;
     list-style: none;
 
@@ -102,6 +101,7 @@ const points = ['a', 'b', 'c'] as const
     display: flex;
     flex-wrap: wrap;
     gap: 0.8rem;
+    margin-top: 0.35rem;
   }
 }
 </style>

@@ -4,11 +4,9 @@
     "description": "Atomic IT tworzy nowoczesne strony dla małych firm. Jasna wycena, prosty proces, bez technicznego żargonu."
   },
   "nav": {
-    "services": "Usługi",
     "process": "Jak działamy",
-    "work": "Realizacje",
+    "work": "Efekt",
     "contact": "Kontakt",
-    "book": "Bezpłatna rozmowa",
     "quote": "Zapytaj o wycenę"
   },
   "hero": {
@@ -16,7 +14,6 @@
     "titleLine1": "Twoja strona.",
     "titleLine2": "Bez stresu.",
     "lead": "Nowoczesne strony dla lokalnych firm i specjalistów. Jedna osoba, jedna odpowiedzialność: od rozmowy do publikacji.",
-    "ctaPrimary": "Umów bezpłatną rozmowę",
     "ctaSecondary": "Napisz na WhatsApp",
     "formTitle": "Poproś o wycenę",
     "pills": {
@@ -52,63 +49,33 @@
       }
     }
   },
-  "stats": {
-    "items": {
-      "a": { "value": "3", "label": "jasne ścieżki współpracy" },
-      "b": { "value": "1", "label": "osoba od A do Z" },
-      "c": { "value": "24h", "label": "na pierwszą odpowiedź" },
-      "d": { "value": "0", "label": "technicznego chaosu" }
-    }
-  },
-  "services": {
-    "eyebrow": "Co robimy",
-    "title": "Strona, która pracuje.\nNie tylko wygląda.",
-    "lead": "Trzy usługi, jeden cel: żeby klienci łatwo Cię znaleźli i wiedzieli, jak się odezwać.",
-    "items": {
-      "new": {
-        "title": "Nowa strona firmowa",
-        "text": "Od zera: wygląd, treść, mobile i publikacja. Prosto i nowocześnie.",
-        "cta": "Zobacz więcej"
-      },
-      "refresh": {
-        "title": "Odświeżenie strony",
-        "text": "Masz stronę, ale nie pomaga? Uporządkujemy i unowocześnimy.",
-        "cta": "Zobacz więcej"
-      },
-      "care": {
-        "title": "Opieka po starcie",
-        "text": "Poprawki, treści i drobne zmiany — jeden kontakt, jasne zasady.",
-        "cta": "Zobacz więcej"
-      }
-    }
-  },
   "problem": {
     "eyebrow": "Problem",
-    "title": "Strona zrobiona\n„przy okazji” nie sprzedaje.",
+    "title": "Strona zrobiona „przy okazji” nie sprzedaje.",
     "lead": "Zbyt często powstaje szybko, wygląda tanio i nikt potem nie wie, jak ją ogarnąć. Nie potrzebujesz kolejnej obietnicy — potrzebujesz jasnej odpowiedzialności.",
     "beforeLabel": "Zwykle",
     "afterLabel": "Atomic IT",
-    "badTitle": "Typowy bałagan",
-    "goodTitle": "Z Atomic IT",
-    "beforeCaption": "Rozproszona odpowiedzialność, niejasne wyceny i strona, która nie buduje zaufania.",
-    "afterCaption": "Jedna osoba, jasna cena, widoczny postęp — od rozmowy do publikacji.",
+    "badTitle": "Zostajesz z problemem",
+    "goodTitle": "Dostajesz wynik",
+    "beforeCaption": "Wielu ludzi, mglista cena i strona, która nic nie sprzedaje.",
+    "afterCaption": "Jeden kontakt, stała cena i strona, która zbiera zapytania.",
     "bridge": "VS",
     "bad": {
-      "a": "Stara strona albo żadnej",
-      "b": "Nikt nie tłumaczy po ludzku",
-      "c": "Nie wiadomo, kto odpowiada",
-      "d": "Poprawki ciągną się tygodniami"
+      "a": "Nikt nie odpowiada za całość — każdy zrzuca winę",
+      "b": "Wycena „wyjdzie w praniu” i extras bez końca",
+      "c": "Nie wiesz, co się dzieje; poprawki wiszą tygodniami",
+      "d": "Po publikacji zostajesz sam z tanim, martwym efektem"
     },
     "good": {
-      "a": "Jedna osoba prowadzi temat",
-      "b": "Jasna wycena przed startem",
-      "c": "Widzisz postęp po drodze",
-      "d": "Pomoc także po publikacji"
+      "a": "Jedna osoba prowadzi temat od rozmowy do startu",
+      "b": "Cena jasna przed startem — bez niespodzianek",
+      "c": "Widzisz postęp na bieżąco i rozmawiasz po ludzku",
+      "d": "Po starcie zostajemy: zmiany szybko, strona pracuje"
     }
   },
   "steps": {
     "eyebrow": "Jak działamy",
-    "title": "Od pierwszej wiadomości\ndo działającej strony.",
+    "title": "Od pierwszej wiadomości do działającej strony.",
     "lead": "Trzy kroki. Cena jasna przed startem. Bez przeciągania.",
     "ctaHint": "Bezpłatna wycena. Bez zobowiązań.",
     "items": {
@@ -133,30 +100,53 @@
     }
   },
   "work": {
-    "eyebrow": "Realizacje",
-    "title": "Proste strony.\nKonkretny efekt.",
-    "lead": "Przykładowe kierunki dla lokalnych firm — tak, żeby strona pomagała zdobywać kontakt.",
-    "items": {
+    "eyebrow": "Po publikacji",
+    "title": "Strona ma dzwonić. Nie wisieć w internecie.",
+    "lead": "Nie galeria branż i ładnych kafelków. Moment, w którym ktoś z okolicy znajduje Cię na telefonie — i zostawia sprawę.",
+    "note": "Nie udajemy cudzych realizacji. Pokazujemy, po co strona w ogóle istnieje.",
+    "beats": {
       "a": {
-        "tag": "Gabinet",
-        "title": "Czytelna strona usługowa",
-        "text": "Oferta, zaufanie i łatwy kontakt na telefonie."
+        "step": "01",
+        "title": "Znajdują Cię",
+        "text": "W Google, na mapach, z polecenia. Wchodzą z komórki, nie z biurka."
       },
       "b": {
-        "tag": "Salon",
-        "title": "Nowoczesna wizytówka",
-        "text": "Pierwsze wrażenie, które wygląda solidnie."
+        "step": "02",
+        "title": "Rozumieją od razu",
+        "text": "Kim jesteś, co robisz, czy warto zaufać. Bez zgadywania i menu-labiryntu."
       },
       "c": {
-        "tag": "Warsztat",
-        "title": "Strona z jasnym CTA",
-        "text": "Co robisz, dla kogo i jak się odezwać — bez zgadywania."
+        "step": "03",
+        "title": "Zostawiają kontakt",
+        "text": "Dzwonią, piszą albo rezerwują. Ty dostajesz konkret — nie martwe „odwiedziny”."
+      }
+    },
+    "phone": {
+      "hint": "Na Twoim telefonie",
+      "time": "12:41",
+      "date": "Dziś po południu"
+    },
+    "pings": {
+      "call": {
+        "app": "Telefon",
+        "title": "Połączenie z map",
+        "text": "Klient właśnie kliknął „Zadzwoń”."
+      },
+      "chat": {
+        "app": "WhatsApp",
+        "title": "Nowa wiadomość",
+        "text": "„Czy jutro da się wpaść?”"
+      },
+      "book": {
+        "app": "Terminarz",
+        "title": "Nowy termin",
+        "text": "Czwartek · 10:00 — ze strony."
       }
     }
   },
   "fit": {
     "eyebrow": "Uwaga",
-    "title": "Nie dla każdego.\nI to jest OK.",
+    "title": "Nie dla każdego. I to jest OK.",
     "lead": "Najlepiej działa, gdy jest zaufanie i współpraca. Lepiej ustalić to na początku.",
     "noBadge": "Nie",
     "yesBadge": "Tak",
@@ -175,7 +165,7 @@
   },
   "cta": {
     "eyebrow": "Zacznij tutaj",
-    "title": "Umów bezpłatną\nrozmowę 20 minut.",
+    "title": "Umów bezpłatną rozmowę 20 minut.",
     "lead": "Pogadamy o firmie, o tym gdzie jesteś i dokąd chcesz dojść. Jeśli mogę pomóc — powiem jak. Jeśli nie — też to usłyszysz.",
     "points": {
       "a": {
@@ -188,21 +178,35 @@
         "text": "Nie z „działem sprzedaży”"
       }
     },
-    "book": "Umów rozmowę",
     "whatsapp": "Napisz na WhatsApp",
+    "dialogClose": "Zamknij",
     "or": "albo wyślij wiadomość",
     "form": {
-      "name": "Imię",
       "email": "E-mail",
-      "message": "Czego potrzebujesz?",
+      "siteType": "Typ strony",
+      "siteTypePlaceholder": "Wybierz opcję",
+      "types": {
+        "company": "Strona firmowa",
+        "landing": "Prosta wizytówka",
+        "refresh": "Odświeżenie istniejącej",
+        "help": "Nie wiem / potrzebuję pomocy"
+      },
       "submit": "Wyślij wiadomość",
       "sending": "Wysyłanie…",
-      "success": "Dzięki! Otworzyliśmy aplikację mailową — wyślij wiadomość, a wrócimy z odpowiedzią.",
-      "error": "Uzupełnij imię, poprawny e-mail i krótką wiadomość."
+      "success": "Dzięki! Wiadomość wysłana — wrócimy z odpowiedzią.",
+      "error": "Podaj poprawny e-mail i wybierz typ strony.",
+      "failed": "Nie udało się wysłać. Spróbuj ponownie lub napisz na WhatsApp."
     }
   },
   "footer": {
     "tagline": "Strony WWW dla firm, które wolą spokój od technicznego chaosu.",
+    "navLabel": "Nawigacja w stopce",
+    "navHeading": "Na stronie",
+    "contactHeading": "Kontakt",
+    "companyHeading": "Dane firmy",
+    "nip": "NIP",
+    "regon": "REGON",
+    "krs": "KRS",
     "rights": "Wszelkie prawa zastrzeżone."
   }
 }

@@ -13,7 +13,9 @@
 		"write": "node .config/scripts/run-check.mjs write biome check --write .",
 		"typeslint": "node .config/scripts/run-check.mjs typeslint nuxt typecheck",
 		"prepare": "node .config/scripts/run-check.mjs prepare husky",
-		"tsc": "tsc --check --noEmit"
+		"tsc": "tsc --check --noEmit",
+		"wrangler": "node .config/scripts/run-check.mjs wrangler wrangler deploy",
+		"deploy": "pnpm build && pnpm wrangler"
 	},
 	"dependencies": {
 		"@nuxt/fonts": "^0.14.0",
@@ -33,6 +35,7 @@
 		"stylelint-config-recommended-vue": "^1.6.1",
 		"stylelint-config-standard-scss": "^17.0.0",
 		"typescript": "^5.9.3",
-		"vue-tsc": "^3.3.8"
+		"vue-tsc": "^3.3.8",
+		"wrangler": "^4.124.0"
 	}
 }

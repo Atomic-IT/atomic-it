@@ -4,11 +4,9 @@
     "description": "Atomic IT builds modern websites for small businesses. Clear pricing, simple process, no tech jargon."
   },
   "nav": {
-    "services": "Services",
     "process": "How we work",
-    "work": "Work",
+    "work": "Result",
     "contact": "Contact",
-    "book": "Free call",
     "quote": "Ask for a quote"
   },
   "hero": {
@@ -16,7 +14,6 @@
     "titleLine1": "Your website.",
     "titleLine2": "Without the stress.",
     "lead": "Modern websites for local businesses and professionals. One person, one owner: from the first call to launch.",
-    "ctaPrimary": "Book a free call",
     "ctaSecondary": "Message on WhatsApp",
     "formTitle": "Ask for a quote",
     "pills": {
@@ -52,63 +49,33 @@
       }
     }
   },
-  "stats": {
-    "items": {
-      "a": { "value": "3", "label": "clear ways to work together" },
-      "b": { "value": "1", "label": "person from start to finish" },
-      "c": { "value": "24h", "label": "for the first reply" },
-      "d": { "value": "0", "label": "tech chaos" }
-    }
-  },
-  "services": {
-    "eyebrow": "What we do",
-    "title": "A site that works.\nNot just looks pretty.",
-    "lead": "Three services, one goal: make it easy for customers to find you and get in touch.",
-    "items": {
-      "new": {
-        "title": "New business website",
-        "text": "From scratch: design, copy, mobile, and launch. Simple and modern.",
-        "cta": "Learn more"
-      },
-      "refresh": {
-        "title": "Website refresh",
-        "text": "Have a site that isn’t helping? We’ll clean it up and modernize it.",
-        "cta": "Learn more"
-      },
-      "care": {
-        "title": "Care after launch",
-        "text": "Updates, copy tweaks, and small changes — one contact, clear rules.",
-        "cta": "Learn more"
-      }
-    }
-  },
   "problem": {
     "eyebrow": "The problem",
-    "title": "A website done\n“on the side” doesn’t sell.",
+    "title": "A website done “on the side” doesn’t sell.",
     "lead": "Too often it’s rushed, looks cheap, and nobody knows how to maintain it. You don’t need another promise — you need clear ownership.",
     "beforeLabel": "Usual path",
     "afterLabel": "Atomic IT",
-    "badTitle": "The usual mess",
-    "goodTitle": "With Atomic IT",
-    "beforeCaption": "Scattered ownership, vague quotes, and a site that doesn’t earn trust.",
-    "afterCaption": "One person, clear price, visible progress — from first call to launch.",
+    "badTitle": "You’re left with the mess",
+    "goodTitle": "You get a result",
+    "beforeCaption": "Too many people, a vague price, and a site that doesn’t sell.",
+    "afterCaption": "One contact, a fixed price, and a site that brings in inquiries.",
     "bridge": "VS",
     "bad": {
-      "a": "An old site — or none at all",
-      "b": "Nobody explains things plainly",
-      "c": "Unclear who owns the project",
-      "d": "Updates drag on for weeks"
+      "a": "Nobody owns the whole thing — blame gets passed around",
+      "b": "Pricing “we’ll see” and extras that never stop",
+      "c": "You don’t know what’s happening; updates drag for weeks",
+      "d": "After launch you’re alone with a cheap, dead website"
     },
     "good": {
-      "a": "One person runs the whole thing",
-      "b": "Clear pricing before we start",
-      "c": "You see progress along the way",
-      "d": "Help after launch too"
+      "a": "One person runs it from first call to launch",
+      "b": "Clear price before we start — no surprises",
+      "c": "You see progress as we go, in plain language",
+      "d": "We stay after launch: fast changes, a site that works"
     }
   },
   "steps": {
     "eyebrow": "How we work",
-    "title": "From the first message\nto a live website.",
+    "title": "From the first message to a live website.",
     "lead": "Three steps. Clear price before we start. No dragging it out.",
     "ctaHint": "Free quote. No obligation.",
     "items": {
@@ -133,30 +100,53 @@
     }
   },
   "work": {
-    "eyebrow": "Work",
-    "title": "Simple websites.\nClear outcomes.",
-    "lead": "Example directions for local businesses — so the site helps people get in touch.",
-    "items": {
+    "eyebrow": "After launch",
+    "title": "The site should ring. Not sit online.",
+    "lead": "Not a gallery of industries and pretty tiles. The moment someone nearby finds you on their phone — and actually gets in touch.",
+    "note": "We don’t fake other people’s case studies. We show what a website is for.",
+    "beats": {
       "a": {
-        "tag": "Clinic",
-        "title": "A clear service site",
-        "text": "Offer, trust, and easy contact on mobile."
+        "step": "01",
+        "title": "They find you",
+        "text": "On Google, on maps, from a referral. They arrive on a phone, not a desk."
       },
       "b": {
-        "tag": "Salon",
-        "title": "A modern calling card",
-        "text": "A first impression that feels solid."
+        "step": "02",
+        "title": "They get it immediately",
+        "text": "Who you are, what you do, whether to trust you. No maze, no guessing."
       },
       "c": {
-        "tag": "Workshop",
-        "title": "A site with a clear CTA",
-        "text": "What you do, who it’s for, and how to reach you."
+        "step": "03",
+        "title": "They leave a lead",
+        "text": "They call, message, or book. You get something real — not empty “visits”."
+      }
+    },
+    "phone": {
+      "hint": "On your phone",
+      "time": "12:41",
+      "date": "This afternoon"
+    },
+    "pings": {
+      "call": {
+        "app": "Phone",
+        "title": "Call from Maps",
+        "text": "A client just tapped “Call now”."
+      },
+      "chat": {
+        "app": "WhatsApp",
+        "title": "New message",
+        "text": "“Any chance I can come in tomorrow?”"
+      },
+      "book": {
+        "app": "Calendar",
+        "title": "New booking",
+        "text": "Thursday · 10:00 — from the site."
       }
     }
   },
   "fit": {
     "eyebrow": "Heads up",
-    "title": "Not for everyone.\nAnd that’s fine.",
+    "title": "Not for everyone. And that’s fine.",
     "lead": "It works best with trust and collaboration. Better to say it upfront.",
     "noBadge": "No",
     "yesBadge": "Yes",
@@ -175,7 +165,7 @@
   },
   "cta": {
     "eyebrow": "Start here",
-    "title": "Book a free\n20-minute call.",
+    "title": "Book a free 20-minute call.",
     "lead": "We’ll talk about your business, where you are, and where you want to go. If I can help, I’ll say how. If not, you’ll hear that too.",
     "points": {
       "a": { "title": "Same-day reply", "text": "You won’t wait for weeks" },
@@ -185,21 +175,35 @@
         "text": "Not a sales department"
       }
     },
-    "book": "Book a call",
     "whatsapp": "Message on WhatsApp",
+    "dialogClose": "Close",
     "or": "or send a message",
     "form": {
-      "name": "Name",
       "email": "Email",
-      "message": "What do you need?",
+      "siteType": "Website type",
+      "siteTypePlaceholder": "Choose an option",
+      "types": {
+        "company": "Business website",
+        "landing": "Simple one-pager",
+        "refresh": "Refresh an existing site",
+        "help": "I don’t know / I need help"
+      },
       "submit": "Send message",
       "sending": "Sending…",
-      "success": "Thanks! We opened your email app — send the message and we’ll get back to you.",
-      "error": "Please add your name, a valid email, and a short message."
+      "success": "Thanks! Message sent — we’ll get back to you.",
+      "error": "Enter a valid email and choose a website type.",
+      "failed": "Couldn’t send. Try again or message us on WhatsApp."
     }
   },
   "footer": {
     "tagline": "Websites for businesses that prefer calm over tech chaos.",
+    "navLabel": "Footer navigation",
+    "navHeading": "On this page",
+    "contactHeading": "Contact",
+    "companyHeading": "Company details",
+    "nip": "NIP",
+    "regon": "REGON",
+    "krs": "KRS",
     "rights": "All rights reserved."
   }
 }
