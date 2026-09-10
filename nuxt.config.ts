@@ -63,18 +63,6 @@ export default defineNuxtConfig({
     head: {
       titleTemplate: '%s · Atomic IT',
       htmlAttrs: { lang: 'pl' },
-      script: [
-        {
-          src: 'https://www.googletagmanager.com/gtag/js?id=AW-18392809045',
-          async: true,
-        },
-        {
-          innerHTML: `window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'AW-18392809045');`,
-        },
-      ],
     },
   },
 })

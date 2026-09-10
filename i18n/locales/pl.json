@@ -7,7 +7,9 @@
     "process": "Jak działamy",
     "work": "Efekt",
     "contact": "Kontakt",
-    "quote": "Zapytaj o wycenę"
+    "quote": "Zapytaj o wycenę",
+    "privacy": "Polityka prywatności",
+    "cookies": "Cookies"
   },
   "hero": {
     "badge": "Strony WWW · jasna wycena · bez żargonu",
@@ -207,10 +209,120 @@
     "navLabel": "Nawigacja w stopce",
     "navHeading": "Na stronie",
     "contactHeading": "Kontakt",
+    "legalHeading": "Informacje prawne",
     "companyHeading": "Dane firmy",
     "nip": "NIP",
     "regon": "REGON",
     "krs": "KRS",
     "rights": "Wszelkie prawa zastrzeżone."
+  },
+  "privacy": {
+    "metaTitle": "Polityka prywatności",
+    "metaDescription": "Jak Atomic IT Sp. z o.o. przetwarza dane osobowe na stronie atomic-it.site.",
+    "eyebrow": "RODO",
+    "title": "Polityka prywatności",
+    "updated": "Ostatnia aktualizacja: 10 września 2026",
+    "lead": "Dbamy o Twoje dane. Poniżej znajdziesz jasne informacje o tym, kto jest administratorem, jakie dane zbieramy i w jakim celu.",
+    "related": "Szczegóły dotyczące plików cookie:",
+    "sections": {
+      "controller": {
+        "title": "1. Administrator danych",
+        "paragraphs": [
+          "Administratorem danych osobowych jest Atomic IT Sp. z o.o. z siedzibą przy ul. Gospodarcza 24 lok. 25, 20-213 Lublin, NIP 9462749033, REGON 540612452, KRS 0001147827.",
+          "Kontakt w sprawach danych: info{'@'}atomic-it.site."
+        ]
+      },
+      "data": {
+        "title": "2. Jakie dane zbieramy",
+        "paragraphs": [
+          "Przez formularz kontaktowy: adres e-mail oraz typ strony, której dotyczy zapytanie.",
+          "Techniczne dane niezbędne do działania strony: język interfejsu, ustawienia zgody na cookies, podstawowe logi serwera.",
+          "Jeśli wyrazisz zgodę: dane analityczne (Microsoft Clarity) oraz marketingowe (Google Ads) — szczegóły w polityce cookies."
+        ]
+      },
+      "purposes": {
+        "title": "3. Cele i podstawy prawne",
+        "paragraphs": [
+          "Odpowiedź na zapytanie i przygotowanie wyceny — art. 6 ust. 1 lit. b RODO (działania przed zawarciem umowy) lub lit. f (prawnie uzasadniony interes).",
+          "Prowadzenie korespondencji i kontakt handlowy związany z Twoim zapytaniem — art. 6 ust. 1 lit. f RODO.",
+          "Analityka i marketing — wyłącznie na podstawie zgody (art. 6 ust. 1 lit. a RODO), którą możesz w każdej chwili wycofać.",
+          "Dane z formularza przetwarzamy przez czas potrzebny do obsługi zapytania, a potem przez okres przedawnienia roszczeń, o ile prawo tego wymaga."
+        ]
+      },
+      "cookies": {
+        "title": "4. Cookies i narzędzia zewnętrzne",
+        "paragraphs": [
+          "Używamy niezbędnych cookies (np. język strony) oraz — po zgodzie — cookies analitycznych i marketingowych.",
+          "Dostawcy zewnętrzni: Microsoft Clarity (analiza zachowania na stronie) oraz Google (Google Ads). Dane mogą być przekazywane poza EOG na podstawie standardowych klauzul umownych lub innych mechanizmów zgodnych z RODO."
+        ]
+      },
+      "rights": {
+        "title": "5. Twoje prawa",
+        "paragraphs": [
+          "Masz prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia oraz sprzeciwu wobec przetwarzania opartego na uzasadnionym interesie.",
+          "Możesz wycofać zgodę w dowolnym momencie — bez wpływu na zgodność z prawem przetwarzania sprzed wycofania.",
+          "Masz też prawo wnieść skargę do Prezesa Urzędu Ochrony Danych Osobowych (uodo.gov.pl)."
+        ]
+      },
+      "contact": {
+        "title": "6. Kontakt",
+        "paragraphs": [
+          "W sprawach prywatności napisz na info{'@'}atomic-it.site lub skontaktuj się przez WhatsApp pod numerem wskazanym na stronie."
+        ]
+      }
+    }
+  },
+  "cookies": {
+    "metaTitle": "Polityka cookies",
+    "metaDescription": "Jakie pliki cookie używa Atomic IT i jak zarządzać zgodą.",
+    "eyebrow": "Cookies",
+    "title": "Polityka cookies",
+    "updated": "Ostatnia aktualizacja: 10 września 2026",
+    "lead": "Krótko: niezbędne cookies działają zawsze. Analityka i marketing — tylko po Twojej zgodzie.",
+    "related": "Pełna informacja o danych osobowych:",
+    "manageTitle": "Zmień zgodę",
+    "manageText": "Możesz w każdej chwili zmienić decyzję. Po wyborze strona przeładuje odpowiednie skrypty zgodnie z Twoją zgodą.",
+    "statusAccepted": "Aktualnie: zaakceptowano cookies analityczne i/lub marketingowe.",
+    "statusNecessary": "Aktualnie: tylko cookies niezbędne.",
+    "banner": {
+      "aria": "Ustawienia cookies",
+      "title": "Cookies na tej stronie",
+      "text": "Używamy niezbędnych cookies do działania strony. Analityka (Clarity) i marketing (Google Ads) włączamy dopiero po zgodzie.",
+      "policy": "Polityka cookies",
+      "necessary": "Tylko niezbędne",
+      "accept": "Akceptuję wszystkie"
+    },
+    "sections": {
+      "what": {
+        "title": "1. Czym są cookies",
+        "paragraphs": [
+          "Cookies to małe pliki zapisywane w przeglądarce. Pomagają zapamiętać ustawienia, zrozumieć, jak działa strona, albo mierzyć skuteczność reklam.",
+          "Na atomic-it.site rozróżniamy cookies niezbędne oraz opcjonalne (analityczne i marketingowe)."
+        ]
+      },
+      "types": {
+        "title": "2. Jakie cookies używamy",
+        "paragraphs": [
+          "Niezbędne: język strony (i18n) oraz zapis Twojej decyzji o zgodzie. Bez nich strona nie działa poprawnie.",
+          "Analityczne (po zgodzie): Microsoft Clarity — nagrania sesji i mapy ciepła, żeby poprawiać użyteczność.",
+          "Marketingowe (po zgodzie): Google Ads (gtag) — pomiar konwersji i skuteczności kampanii."
+        ]
+      },
+      "manage": {
+        "title": "3. Jak zarządzać zgodą",
+        "paragraphs": [
+          "Przy pierwszej wizycie pokażemy banner. Możesz zaakceptować wszystkie cookies albo zostać przy niezbędnych.",
+          "Zmianę decyzji zrobisz też na tej stronie albo usuwając dane lokalne przeglądarki (localStorage) dla atomic-it.site."
+        ]
+      },
+      "third": {
+        "title": "4. Dostawcy zewnętrzni",
+        "paragraphs": [
+          "Microsoft Clarity: clarity.microsoft.com — polityka prywatności Microsoft.",
+          "Google Ads / Google Ireland Limited — polityki Google dotyczące reklam i cookies.",
+          "Wysyłka formularza kontaktowego odbywa się przez Resend; treść zapytania trafia na info{'@'}atomic-it.site."
+        ]
+      }
+    }
   }
 }

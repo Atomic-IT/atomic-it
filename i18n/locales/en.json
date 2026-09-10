@@ -7,7 +7,9 @@
     "process": "How we work",
     "work": "Result",
     "contact": "Contact",
-    "quote": "Ask for a quote"
+    "quote": "Ask for a quote",
+    "privacy": "Privacy policy",
+    "cookies": "Cookies"
   },
   "hero": {
     "badge": "Websites · clear pricing · no jargon",
@@ -204,10 +206,120 @@
     "navLabel": "Footer navigation",
     "navHeading": "On this page",
     "contactHeading": "Contact",
+    "legalHeading": "Legal",
     "companyHeading": "Company details",
     "nip": "NIP",
     "regon": "REGON",
     "krs": "KRS",
     "rights": "All rights reserved."
+  },
+  "privacy": {
+    "metaTitle": "Privacy policy",
+    "metaDescription": "How Atomic IT Sp. z o.o. processes personal data on atomic-it.site.",
+    "eyebrow": "GDPR",
+    "title": "Privacy policy",
+    "updated": "Last updated: 10 September 2026",
+    "lead": "We take your data seriously. Below is a clear summary of who the controller is, what we collect, and why.",
+    "related": "Details about cookies:",
+    "sections": {
+      "controller": {
+        "title": "1. Data controller",
+        "paragraphs": [
+          "The controller is Atomic IT Sp. z o.o., ul. Gospodarcza 24 lok. 25, 20-213 Lublin, Poland, NIP 9462749033, REGON 540612452, KRS 0001147827.",
+          "Data protection contact: info{'@'}atomic-it.site."
+        ]
+      },
+      "data": {
+        "title": "2. What data we collect",
+        "paragraphs": [
+          "Via the contact form: email address and the website type related to your enquiry.",
+          "Technical data needed to run the site: interface language, cookie consent settings, basic server logs.",
+          "If you consent: analytics data (Microsoft Clarity) and marketing data (Google Ads) — see the cookie policy."
+        ]
+      },
+      "purposes": {
+        "title": "3. Purposes and legal bases",
+        "paragraphs": [
+          "Replying to enquiries and preparing quotes — Art. 6(1)(b) GDPR (pre-contractual steps) or (f) (legitimate interest).",
+          "Business correspondence related to your enquiry — Art. 6(1)(f) GDPR.",
+          "Analytics and marketing — only with consent (Art. 6(1)(a) GDPR), which you may withdraw at any time.",
+          "Form data is kept as long as needed to handle the enquiry, then for the limitation period of claims where required by law."
+        ]
+      },
+      "cookies": {
+        "title": "4. Cookies and third-party tools",
+        "paragraphs": [
+          "We use necessary cookies (e.g. language) and — after consent — analytics and marketing cookies.",
+          "Third parties: Microsoft Clarity (behaviour analytics) and Google (Google Ads). Data may be transferred outside the EEA under SCCs or other GDPR-compliant safeguards."
+        ]
+      },
+      "rights": {
+        "title": "5. Your rights",
+        "paragraphs": [
+          "You have the right of access, rectification, erasure, restriction, portability, and objection to processing based on legitimate interest.",
+          "You may withdraw consent at any time without affecting the lawfulness of processing before withdrawal.",
+          "You may lodge a complaint with the Polish DPA (UODO) or your local supervisory authority."
+        ]
+      },
+      "contact": {
+        "title": "6. Contact",
+        "paragraphs": [
+          "For privacy questions, email info{'@'}atomic-it.site or contact us via WhatsApp using the number on the website."
+        ]
+      }
+    }
+  },
+  "cookies": {
+    "metaTitle": "Cookie policy",
+    "metaDescription": "Which cookies Atomic IT uses and how to manage consent.",
+    "eyebrow": "Cookies",
+    "title": "Cookie policy",
+    "updated": "Last updated: 10 September 2026",
+    "lead": "Short version: necessary cookies always run. Analytics and marketing load only after your consent.",
+    "related": "Full personal data information:",
+    "manageTitle": "Change your choice",
+    "manageText": "You can change your decision at any time. After you choose, the site loads scripts according to your consent.",
+    "statusAccepted": "Current: analytics and/or marketing cookies accepted.",
+    "statusNecessary": "Current: necessary cookies only.",
+    "banner": {
+      "aria": "Cookie settings",
+      "title": "Cookies on this site",
+      "text": "We use necessary cookies to run the site. Analytics (Clarity) and marketing (Google Ads) load only after consent.",
+      "policy": "Cookie policy",
+      "necessary": "Necessary only",
+      "accept": "Accept all"
+    },
+    "sections": {
+      "what": {
+        "title": "1. What cookies are",
+        "paragraphs": [
+          "Cookies are small files stored in your browser. They remember settings, help us understand how the site works, or measure ad performance.",
+          "On atomic-it.site we distinguish necessary cookies from optional analytics and marketing cookies."
+        ]
+      },
+      "types": {
+        "title": "2. Cookies we use",
+        "paragraphs": [
+          "Necessary: site language (i18n) and your consent choice. The site needs these to work properly.",
+          "Analytics (after consent): Microsoft Clarity — session recordings and heatmaps to improve usability.",
+          "Marketing (after consent): Google Ads (gtag) — conversion tracking and campaign measurement."
+        ]
+      },
+      "manage": {
+        "title": "3. Managing consent",
+        "paragraphs": [
+          "On your first visit we show a banner. You can accept all cookies or stick to necessary ones.",
+          "You can also change your choice on this page or clear local site data (localStorage) for atomic-it.site."
+        ]
+      },
+      "third": {
+        "title": "4. Third-party providers",
+        "paragraphs": [
+          "Microsoft Clarity: clarity.microsoft.com — Microsoft privacy policy.",
+          "Google Ads / Google Ireland Limited — Google ads and cookie policies.",
+          "Contact form delivery uses Resend; enquiry content is sent to info{'@'}atomic-it.site."
+        ]
+      }
+    }
   }
 }

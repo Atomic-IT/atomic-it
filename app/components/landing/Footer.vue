@@ -18,6 +18,11 @@ const links = computed(() => [
   { href: `${localePath('/')}#contact`, label: 'nav.contact' },
 ])
 
+const legalLinks = computed(() => [
+  { to: localePath('/privacy'), label: 'nav.privacy' },
+  { to: localePath('/cookies'), label: 'nav.cookies' },
+])
+
 const identifiers = computed(() => [
   { label: 'footer.nip', value: company.nip },
   { label: 'footer.regon', value: company.regon },
@@ -61,6 +66,14 @@ const identifiers = computed(() => [
             </a>
           </li>
         </ul>
+        <p class="footer-heading footer-legal-heading">
+          {{ $t('footer.legalHeading') }}
+        </p>
+        <ul>
+          <li v-for="link in legalLinks" :key="link.label">
+            <NuxtLink :to="link.to">{{ $t(link.label) }}</NuxtLink>
+          </li>
+        </ul>
       </div>
 
       <div class="footer-company">
@@ -81,7 +94,11 @@ const identifiers = computed(() => [
     <div class="footer-bar">
       <div class="container footer-bar-inner">
         <p>© {{ year }} {{ company.legalName }}</p>
-        <p>{{ $t('footer.rights') }}</p>
+        <nav class="footer-bar-links" :aria-label="$t('footer.legalHeading')">
+          <NuxtLink v-for="link in legalLinks" :key="link.label" :to="link.to">
+            {{ $t(link.label) }}
+          </NuxtLink>
+        </nav>
       </div>
     </div>
   </footer>
@@ -207,6 +224,10 @@ const identifiers = computed(() => [
     }
   }
 
+  &-legal-heading {
+    margin-top: 1.35rem;
+  }
+
   &-bar {
     border-top: 1px solid rgb(255 255 255 / 8%);
   }
@@ -216,12 +237,29 @@ const identifiers = computed(() => [
     flex-wrap: wrap;
     gap: 0.5rem 1.25rem;
     justify-content: space-between;
+    align-items: center;
     padding-block: 1.1rem;
     color: rgb(226 232 240 / 42%);
     font-size: 0.82rem;
 
     p {
       margin: 0;
+    }
+  }
+
+  &-bar-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.15rem;
+
+    a {
+      color: rgb(226 232 240 / 55%);
+      font-weight: 600;
+      text-decoration: none;
+
+      &:hover {
+        color: #fff;
+      }
     }
   }
 }
