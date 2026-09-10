@@ -28,6 +28,7 @@ const siteTypes = ['company', 'landing', 'refresh', 'help'] as const
 const selectId = computed(() => `${props.titleId}-type`)
 const listId = computed(() => `${props.titleId}-type-list`)
 const { closeContactDialog } = useContactDialog()
+const { trackGenerateLead } = useAnalytics()
 
 const selectedLabel = computed(() =>
   siteType.value
@@ -136,6 +137,7 @@ async function submitForm() {
       },
     })
     status.value = 'success'
+    trackGenerateLead()
     email.value = ''
     siteType.value = ''
     if (props.embedded) {

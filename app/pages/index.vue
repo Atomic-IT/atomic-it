@@ -5,13 +5,21 @@ useHead(() => ({
   htmlAttrs: { lang: locale.value },
 }))
 
+const siteUrl = 'https://atomic-it.site'
+const ogImage = `${siteUrl}/images/og.jpg`
+
 useSeoMeta({
   title: () => t('meta.title'),
   description: () => t('meta.description'),
   ogTitle: () => t('meta.title'),
   ogDescription: () => t('meta.description'),
   ogType: 'website',
+  ogUrl: () => `${siteUrl}/${locale.value}`,
+  ogImage,
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   twitterCard: 'summary_large_image',
+  twitterImage: ogImage,
 })
 </script>
 
