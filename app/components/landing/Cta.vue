@@ -33,6 +33,10 @@ const points = ['a', 'b', 'c'] as const
             <WhatsAppIcon />
             {{ $t('cta.whatsapp') }}
           </MagneticButton>
+          <p class="cta-whatsapp-hint">{{ $t('cta.whatsappHint') }}</p>
+          <a class="cta-pricing-link" href="#pricing">
+            {{ $t('cta.pricingLink') }}
+          </a>
         </div>
       </div>
 
@@ -98,10 +102,29 @@ const points = ['a', 'b', 'c'] as const
   }
 
   &-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
+    display: grid;
+    justify-items: start;
+    gap: 0.55rem;
     margin-top: 0.35rem;
+  }
+
+  &-whatsapp-hint {
+    margin: 0;
+    color: $color-fg-muted;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  &-pricing-link {
+    color: $color-primary;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+
+    &:hover {
+      color: $color-primary-hover;
+    }
   }
 }
 </style>

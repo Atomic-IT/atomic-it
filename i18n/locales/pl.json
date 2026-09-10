@@ -6,7 +6,7 @@
   "nav": {
     "process": "Jak działamy",
     "pricing": "Cennik",
-    "work": "Efekt",
+    "work": "Po starcie",
     "contact": "Kontakt",
     "quote": "Zapytaj o wycenę",
     "privacy": "Polityka prywatności",
@@ -18,6 +18,7 @@
     "titleLine2": "zbiera zapytania.",
     "lead": "Dla gabinetów, salonów i usług z okolicy. Jedna osoba od rozmowy do publikacji — wiesz, ile płacisz, zanim zaczynamy.",
     "ctaSecondary": "Napisz na WhatsApp",
+    "ctaHint": "Bezpłatna rozmowa · bez zobowiązań",
     "formTitle": "Bezpłatna wycena · 20 min",
     "pills": {
       "a": "Odpowiedź tego samego dnia",
@@ -26,9 +27,10 @@
     }
   },
   "trusted": {
-    "label": "Dla kogo pracujemy",
+    "label": "Dla kogo",
     "title": "Dla firm, do których wchodzi się z ulicy.",
-    "lead": "Jeśli klienci przychodzą do Ciebie na miejscu - pewnie pasujemy.",
+    "lead": "Gabinet, salon, warsztat, kancelaria, lokal, gastronomia — jeśli klienci przychodzą do Ciebie, robimy stronę pod to.",
+    "note": "Pierwsze case’y w toku — albo napisz, pokażemy podobny układ.",
     "items": {
       "a": {
         "name": "Gabinety",
@@ -59,24 +61,24 @@
   "problem": {
     "eyebrow": "Problem",
     "title": "Strona zrobiona „przy okazji” nie sprzedaje.",
-    "lead": "Zbyt często powstaje szybko, wygląda tanio i nikt potem nie wie, jak ją ogarnąć. Nie potrzebujesz kolejnej obietnicy - potrzebujesz jasnej odpowiedzialności.",
+    "lead": "Powstaje szybko, wygląda tanio, nikt nie ogarnia poprawek. Nie potrzebujesz kolejnej obietnicy — potrzebujesz kogoś, kto bierze temat na siebie.",
     "beforeLabel": "Zwykle",
     "afterLabel": "Atomic IT",
     "badTitle": "Zostajesz z problemem",
     "goodTitle": "Dostajesz wynik",
     "beforeCaption": "Wielu ludzi, mglista cena i strona, która nic nie sprzedaje.",
-    "afterCaption": "Jeden kontakt, stała cena i strona, która zbiera zapytania.",
+    "afterCaption": "Jeden kontakt, cena znana przed startem, strona zbiera zapytania.",
     "bridge": "VS",
     "bad": {
       "a": "Nikt nie odpowiada za całość - każdy zrzuca winę",
       "b": "Wycena „wyjdzie w praniu” i extras bez końca",
-      "c": "Nie wiesz, co się dzieje; poprawki wiszą tygodniami",
+      "c": "Poprawki wiszą tygodniami — nie wiesz, co się dzieje",
       "d": "Po publikacji zostajesz sam z tanim, martwym efektem"
     },
     "good": {
       "a": "Jedna osoba prowadzi temat od rozmowy do startu",
-      "b": "Cena jasna przed startem - bez niespodzianek",
-      "c": "Widzisz postęp na bieżąco i rozmawiasz po ludzku",
+      "b": "Cena ustalona przed startem — szczegóły niżej",
+      "c": "Widzisz postęp i rozmawiasz po ludzku",
       "d": "Po starcie zostajemy: zmiany szybko, strona pracuje"
     }
   },
@@ -204,15 +206,15 @@
   "fit": {
     "eyebrow": "Uwaga",
     "title": "Nie dla każdego. I to jest OK.",
-    "lead": "Najlepiej działa, gdy jest zaufanie i współpraca. Lepiej ustalić to na początku.",
+    "lead": "Najlepiej działa przy zaufaniu i krótkich ustaleniach. Lepiej wiedzieć to na starcie.",
     "noBadge": "Nie",
     "yesBadge": "Tak",
     "noTitle": "Raczej nie, jeśli",
     "yesTitle": "Pogodzimy się, jeśli",
     "no": {
-      "a": "Szukasz cudów za zero złotych",
-      "b": "Nie masz chwili na krótkie ustalenia",
-      "c": "Chcesz kontrolować każdy piksel przez miesiąc"
+      "a": "Szukasz cudów za symboliczne pieniądze",
+      "b": "Nie masz 20 minut na ustalenia",
+      "c": "Chcesz miesiącami sterować każdym pikselem"
     },
     "yes": {
       "a": "Wiesz, czym się zajmujesz i dla kogo",
@@ -221,23 +223,25 @@
     }
   },
   "cta": {
-    "eyebrow": "Zacznij tutaj",
-    "title": "Umów bezpłatną rozmowę 20 minut.",
-    "lead": "Pogadamy o firmie, o tym gdzie jesteś i dokąd chcesz dojść. Jeśli mogę pomóc - powiem jak. Jeśli nie - też to usłyszysz.",
+    "eyebrow": "Następny krok",
+    "title": "Umów bezpłatną rozmowę — 20 minut.",
+    "lead": "Pogadamy o firmie i celu strony. Jeśli pasujemy — dostaniesz wycenę. Jeśli nie — usłyszysz to wprost.",
     "points": {
       "a": {
         "title": "Odpowiedź w ciągu dnia",
-        "text": "Nie czekasz tygodniami"
+        "text": "Nie wisisz w kolejce"
       },
-      "b": { "title": "Bez presji", "text": "Rozmowa jest darmowa" },
+      "b": { "title": "Bez presji", "text": "Rozmowa nic nie kosztuje" },
       "c": {
         "title": "Mówisz z konkretną osobą",
-        "text": "Nie z „działem sprzedaży”"
+        "text": "Nie z call center"
       }
     },
     "whatsapp": "Napisz na WhatsApp",
+    "whatsappHint": "Zwykle odpisujemy tego samego dnia.",
+    "pricingLink": "Zobacz orientacyjny cennik",
     "dialogClose": "Zamknij",
-    "or": "albo wyślij wiadomość",
+    "or": "albo wyślij krótką wiadomość",
     "form": {
       "email": "E-mail",
       "siteType": "Typ strony",
@@ -256,7 +260,7 @@
     }
   },
   "footer": {
-    "tagline": "Strony WWW dla firm, które wolą spokój od technicznego chaosu.",
+    "tagline": "Strony WWW, które zbierają zapytania — bez technicznego chaosu.",
     "navLabel": "Nawigacja w stopce",
     "navHeading": "Na stronie",
     "contactHeading": "Kontakt",

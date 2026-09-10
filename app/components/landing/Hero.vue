@@ -132,6 +132,7 @@ onMounted(() => {
             <WhatsAppIcon />
             {{ $t('hero.ctaSecondary') }}
           </MagneticButton>
+          <p class="hero-cta-hint">{{ $t('hero.ctaHint') }}</p>
         </div>
       </div>
 
@@ -410,8 +411,17 @@ onMounted(() => {
   &-actions {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 0.85rem;
     margin-bottom: $space-md;
+  }
+
+  &-cta-hint {
+    margin: 0;
+    width: 100%;
+    color: $color-fg-muted;
+    font-size: 0.9rem;
+    font-weight: 600;
   }
 
   &-stage {

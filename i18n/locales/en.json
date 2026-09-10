@@ -6,7 +6,7 @@
   "nav": {
     "process": "How we work",
     "pricing": "Pricing",
-    "work": "Result",
+    "work": "After launch",
     "contact": "Contact",
     "quote": "Ask for a quote",
     "privacy": "Privacy policy",
@@ -18,6 +18,7 @@
     "titleLine2": "brings enquiries.",
     "lead": "For clinics, salons, and neighbourhood services. One person from the first call to launch — you know the price before we begin.",
     "ctaSecondary": "Message on WhatsApp",
+    "ctaHint": "Free call · no obligation",
     "formTitle": "Free quote · 20 min",
     "pills": {
       "a": "Same-day reply",
@@ -26,9 +27,10 @@
     }
   },
   "trusted": {
-    "label": "Who we help",
+    "label": "Who it’s for",
     "title": "Built for people who show up in person.",
-    "lead": "If clients walk through your door - we’re probably a fit.",
+    "lead": "Clinic, salon, workshop, law firm, shop, hospitality — if clients come to you, we build the site for that.",
+    "note": "First case studies in progress — or message us and we’ll show a similar layout.",
     "items": {
       "a": {
         "name": "Clinics",
@@ -59,24 +61,24 @@
   "problem": {
     "eyebrow": "The problem",
     "title": "A website done “on the side” doesn’t sell.",
-    "lead": "Too often it’s rushed, looks cheap, and nobody knows how to maintain it. You don’t need another promise - you need clear ownership.",
+    "lead": "It’s rushed, looks cheap, and nobody owns the follow-ups. You don’t need another promise — you need someone who takes the whole thing on.",
     "beforeLabel": "Usual path",
     "afterLabel": "Atomic IT",
     "badTitle": "You’re left with the mess",
     "goodTitle": "You get a result",
     "beforeCaption": "Too many people, a vague price, and a site that doesn’t sell.",
-    "afterCaption": "One contact, a fixed price, and a site that brings in inquiries.",
+    "afterCaption": "One contact, price known before we start, a site that brings enquiries.",
     "bridge": "VS",
     "bad": {
       "a": "Nobody owns the whole thing - blame gets passed around",
       "b": "Pricing “we’ll see” and extras that never stop",
-      "c": "You don’t know what’s happening; updates drag for weeks",
+      "c": "Updates drag for weeks — you never know what’s happening",
       "d": "After launch you’re alone with a cheap, dead website"
     },
     "good": {
       "a": "One person runs it from first call to launch",
-      "b": "Clear price before we start - no surprises",
-      "c": "You see progress as we go, in plain language",
+      "b": "Price set before we start — details below",
+      "c": "You see progress and talk in plain language",
       "d": "We stay after launch: fast changes, a site that works"
     }
   },
@@ -204,15 +206,15 @@
   "fit": {
     "eyebrow": "Heads up",
     "title": "Not for everyone. And that’s fine.",
-    "lead": "It works best with trust and collaboration. Better to say it upfront.",
+    "lead": "It works best with trust and short decisions. Better to know that upfront.",
     "noBadge": "No",
     "yesBadge": "Yes",
     "noTitle": "Probably not if",
     "yesTitle": "We’ll get along if",
     "no": {
-      "a": "You want miracles for zero budget",
-      "b": "You can’t spare a moment for short decisions",
-      "c": "You want to control every pixel for months"
+      "a": "You want miracles for token money",
+      "b": "You don’t have 20 minutes for decisions",
+      "c": "You want to steer every pixel for months"
     },
     "yes": {
       "a": "You know what you do and who you serve",
@@ -221,20 +223,22 @@
     }
   },
   "cta": {
-    "eyebrow": "Start here",
-    "title": "Book a free 20-minute call.",
-    "lead": "We’ll talk about your business, where you are, and where you want to go. If I can help, I’ll say how. If not, you’ll hear that too.",
+    "eyebrow": "Next step",
+    "title": "Book a free call — 20 minutes.",
+    "lead": "We’ll talk about your business and what the site should do. If we’re a fit — you get a quote. If not — you’ll hear that straight.",
     "points": {
-      "a": { "title": "Same-day reply", "text": "You won’t wait for weeks" },
-      "b": { "title": "No pressure", "text": "The call is free" },
+      "a": { "title": "Same-day reply", "text": "You’re not stuck in a queue" },
+      "b": { "title": "No pressure", "text": "The call costs nothing" },
       "c": {
         "title": "You talk to a real person",
-        "text": "Not a sales department"
+        "text": "Not a call centre"
       }
     },
     "whatsapp": "Message on WhatsApp",
+    "whatsappHint": "We usually reply the same day.",
+    "pricingLink": "See orientative pricing",
     "dialogClose": "Close",
-    "or": "or send a message",
+    "or": "or send a short message",
     "form": {
       "email": "Email",
       "siteType": "Website type",
@@ -253,7 +257,7 @@
     }
   },
   "footer": {
-    "tagline": "Websites for businesses that prefer calm over tech chaos.",
+    "tagline": "Websites that bring enquiries — without the tech chaos.",
     "navLabel": "Footer navigation",
     "navHeading": "On this page",
     "contactHeading": "Contact",

@@ -46,6 +46,8 @@ const { root } = useAnimeReveal({ y: 28, staggerMs: 75, threshold: 0.15 })
           </figure>
         </li>
       </ul>
+
+      <p class="trusted-note reveal">{{ $t('trusted.note') }}</p>
     </div>
   </section>
 </template>
@@ -148,6 +150,15 @@ const { root } = useAnimeReveal({ y: 28, staggerMs: 75, threshold: 0.15 })
     letter-spacing: -0.03em;
     line-height: 1.15;
     text-shadow: 0 2px 16px rgb(0 0 0 / 35%);
+  }
+
+  &-note {
+    margin: 0;
+    max-width: 36rem;
+    color: $color-fg-muted;
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.45;
   }
 }
 </style>
