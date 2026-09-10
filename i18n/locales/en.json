@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Websites for local businesses | Atomic IT (Lublin)",
-    "description": "A website that brings calls and enquiries — not just looks nice. Clear price before we start. Message us for a 20-minute chat."
+    "description": "Get a site that wins calls and enquiries — not just a pretty page. Clear price before we start. Message us for a free 20-minute chat."
   },
   "nav": {
     "process": "How we work",
@@ -13,24 +13,24 @@
     "cookies": "Cookies"
   },
   "hero": {
-    "badge": "Websites for local businesses · price before we start",
-    "titleLine1": "A website that",
-    "titleLine2": "brings enquiries.",
-    "lead": "For clinics, salons, and neighbourhood services. One person from the first call to launch — you know the price before we begin.",
+    "badge": "Local business websites · clear price up front",
+    "titleLine1": "A site that",
+    "titleLine2": "wins enquiries.",
+    "lead": "Built for clinics, salons, and neighbourhood services. One person from first chat to launch — you know the price before work begins.",
     "ctaSecondary": "Message on WhatsApp",
-    "ctaHint": "Free call · no obligation",
+    "ctaHint": "Free chat · no strings",
     "formTitle": "Free quote · 20 min",
     "pills": {
       "a": "Same-day reply",
       "b": "Price before we start",
-      "c": "No jargon"
+      "c": "Plain language"
     }
   },
   "trusted": {
     "label": "Who it’s for",
-    "title": "Built for people who show up in person.",
-    "lead": "Clinic, salon, workshop, law firm, shop, hospitality — if clients come to you, we build the site for that.",
-    "note": "First case studies in progress — or message us and we’ll show a similar layout.",
+    "title": "For businesses people walk into.",
+    "lead": "Clinic, salon, workshop, law firm, shop, hospitality — if customers come to you, we build the website around that.",
+    "note": "Case studies coming soon — or message us and we’ll show a similar layout.",
     "items": {
       "a": {
         "name": "Clinics",
@@ -60,39 +60,39 @@
   },
   "problem": {
     "eyebrow": "The problem",
-    "title": "A website done “on the side” doesn’t sell.",
-    "lead": "It’s rushed, looks cheap, and nobody owns the follow-ups. You don’t need another promise — you need someone who takes the whole thing on.",
-    "beforeLabel": "Usual path",
+    "title": "A website thrown together on the side won’t sell.",
+    "lead": "It’s rushed, looks cheap, and nobody owns the follow-ups. You don’t need another pitch — you need someone who owns the whole job.",
+    "beforeLabel": "The usual way",
     "afterLabel": "Atomic IT",
-    "badTitle": "You’re left with the mess",
-    "goodTitle": "You get a result",
-    "beforeCaption": "Too many people, a vague price, and a site that doesn’t sell.",
-    "afterCaption": "One contact, price known before we start, a site that brings enquiries.",
+    "badTitle": "You’re stuck with the mess",
+    "goodTitle": "You get a working result",
+    "beforeCaption": "Too many people, a fuzzy price, and a site that never sells.",
+    "afterCaption": "One contact, price agreed before we start, a site that brings enquiries.",
     "bridge": "VS",
     "bad": {
-      "a": "Nobody owns the whole thing - blame gets passed around",
-      "b": "Pricing “we’ll see” and extras that never stop",
+      "a": "Nobody owns the whole thing — blame gets passed around",
+      "b": "“We’ll see” pricing and extras that never stop",
       "c": "Updates drag for weeks — you never know what’s happening",
       "d": "After launch you’re alone with a cheap, dead website"
     },
     "good": {
-      "a": "One person runs it from first call to launch",
-      "b": "Price set before we start — details below",
-      "c": "You see progress and talk in plain language",
-      "d": "We stay after launch: fast changes, a site that works"
+      "a": "One person runs it from first chat to launch",
+      "b": "Price agreed before we start — details below",
+      "c": "You see progress and talk in plain English",
+      "d": "We stay after launch: quick changes, a site that works"
     }
   },
   "steps": {
     "eyebrow": "How we work",
-    "title": "From the first message to a live website.",
-    "lead": "Three steps. Price before we start. No dragging it out.",
+    "title": "From first message to a live site.",
+    "lead": "Three steps. Clear price up front. No dragging it out.",
     "ctaHint": "Free quote. No obligation.",
     "items": {
       "talk": {
         "step": "01",
         "time": "about 20 minutes",
         "title": "We talk",
-        "text": "A short call about your business. Then a clear quote — no pressure."
+        "text": "A short chat about your business. Then a clear quote — no pressure."
       },
       "build": {
         "step": "02",
@@ -104,7 +104,7 @@
         "step": "03",
         "time": "launch + support",
         "title": "We launch",
-        "text": "We go live calmly. We stay after launch — updates don’t sit for months."
+        "text": "We go live calmly. We stay afterwards — updates don’t sit for months."
       }
     }
   },
@@ -113,7 +113,7 @@
     "title": "What does it cost?",
     "lead": "Ballpark figures to start. You get an exact quote after a short call — before any work begins.",
     "net": "net",
-    "note": "Orientative amounts. Final quote after a 20-minute call — always before we start.",
+    "note": "Approximate amounts. Final quote after a 20-minute call — always before we start.",
     "cta": "Ask for a quote",
     "ctaAlt": "Or write below",
     "faqTitle": "Quick price FAQ",
@@ -160,9 +160,9 @@
   },
   "work": {
     "eyebrow": "After launch",
-    "title": "The site should ring. Not sit online.",
-    "lead": "Goal: someone nearby finds you on their phone and leaves a real enquiry — not a dead “visit”.",
-    "note": "We publish case studies when a client agrees. Below — how the site should work from day one.",
+    "title": "Your site should ring. Not just sit online.",
+    "lead": "Goal: someone nearby finds you on their phone and leaves a real enquiry — not an empty “visit”.",
+    "note": "We publish case studies when a client agrees. Below is how the site should work from day one.",
     "beats": {
       "a": {
         "step": "01",
@@ -224,11 +224,11 @@
   },
   "cta": {
     "eyebrow": "Next step",
-    "title": "Book a free call — 20 minutes.",
-    "lead": "We’ll talk about your business and what the site should do. If we’re a fit — you get a quote. If not — you’ll hear that straight.",
+    "title": "Book a free 20-minute chat.",
+    "lead": "We’ll talk about your business and what the site should do. If we’re a fit, you get a quote. If not, you’ll hear that straight.",
     "points": {
       "a": { "title": "Same-day reply", "text": "You’re not stuck in a queue" },
-      "b": { "title": "No pressure", "text": "The call costs nothing" },
+      "b": { "title": "No pressure", "text": "The chat costs nothing" },
       "c": {
         "title": "You talk to a real person",
         "text": "Not a call centre"
@@ -236,13 +236,15 @@
     },
     "whatsapp": "Message on WhatsApp",
     "whatsappHint": "We usually reply the same day.",
-    "pricingLink": "See orientative pricing",
+    "pricingLink": "See ballpark pricing",
     "dialogClose": "Close",
     "or": "or send a short message",
     "form": {
       "email": "Email",
       "siteType": "Website type",
       "siteTypePlaceholder": "Choose an option",
+      "context": "Industry or city (optional)",
+      "contextPlaceholder": "e.g. clinic · Lublin",
       "types": {
         "company": "Business website",
         "landing": "Simple one-pager",
@@ -251,7 +253,7 @@
       },
       "submit": "Send message",
       "sending": "Sending…",
-      "success": "Thanks! Message sent - we’ll get back to you.",
+      "success": "Thanks! Message sent — we’ll get back to you.",
       "error": "Enter a valid email and choose a website type.",
       "failed": "Couldn’t send. Try again or message us on WhatsApp."
     }

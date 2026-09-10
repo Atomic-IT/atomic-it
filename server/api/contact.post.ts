@@ -9,6 +9,8 @@ const TYPE_LABELS: Record<SiteType, string> = {
   help: 'Nie wiem / potrzebuję pomocy',
 }
 
+const CONTEXT_MAX = 120
+
 function isSiteType(value: string): value is SiteType {
   return (SITE_TYPES as readonly string[]).includes(value)
 }
@@ -19,12 +21,19 @@ function isValidEmail(value: string) {
 
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig(event)
-  const body = await readBody<{ email?: string; siteType?: string }>(event)
+  const body = await readBody<{
+    email?: string
+    siteType?: string
+    context?: string
+  }>(event)
 
   const email = String(body?.email ?? '')
     .trim()
     .toLowerCase()
   const siteType = String(body?.siteType ?? '').trim()
+  const context = String(body?.context ?? '')
+    .trim()
+    .slice(0, CONTEXT_MAX)
 
   if (!isValidEmail(email) || !isSiteType(siteType)) {
     throw createError({
@@ -60,6 +69,7 @@ export default defineEventHandler(async (event) => {
         '',
         `E-mail: ${email}`,
         `Typ strony: ${typeLabel}`,
+        `Branża / miasto: ${context || '—'}`,
       ].join('\n'),
     }),
   })

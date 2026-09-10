@@ -246,6 +246,8 @@
       "email": "E-mail",
       "siteType": "Typ strony",
       "siteTypePlaceholder": "Wybierz opcję",
+      "context": "Branża lub miasto (opcjonalnie)",
+      "contextPlaceholder": "np. gabinet · Lublin",
       "types": {
         "company": "Strona firmowa",
         "landing": "Prosta wizytówka",

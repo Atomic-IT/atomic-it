@@ -30,6 +30,7 @@ export default defineNuxtConfig({
     defaultLocale: 'pl',
     strategy: 'prefix',
     langDir: 'locales',
+    baseUrl: 'https://atomic-it.site',
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',

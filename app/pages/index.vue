@@ -1,10 +1,6 @@
 <script setup lang="ts">
 const { t, locale } = useI18n()
 
-useHead(() => ({
-  htmlAttrs: { lang: locale.value },
-}))
-
 const siteUrl = 'https://atomic-it.site'
 const ogImage = `${siteUrl}/images/og.jpg`
 
@@ -21,6 +17,37 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
   twitterImage: ogImage,
 })
+
+useHead(() => ({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'ProfessionalService',
+        name: 'Atomic IT Sp. z o.o.',
+        alternateName: 'Atomic IT',
+        url: siteUrl,
+        email: 'info@atomic-it.site',
+        telephone: '+48-798-733-368',
+        image: ogImage,
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: 'ul. Gospodarcza 24 lok. 25',
+          addressLocality: 'Lublin',
+          postalCode: '20-213',
+          addressCountry: 'PL',
+        },
+        areaServed: {
+          '@type': 'Country',
+          name: 'Poland',
+        },
+        priceRange: '$$',
+        description: t('meta.description'),
+      }),
+    },
+  ],
+}))
 </script>
 
 <template>

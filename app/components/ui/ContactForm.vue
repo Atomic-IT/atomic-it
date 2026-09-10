@@ -17,6 +17,7 @@ const { t } = useI18n()
 
 const email = ref('')
 const siteType = ref('')
+const context = ref('')
 const status = ref<'idle' | 'error' | 'failed' | 'success'>('idle')
 const submitting = ref(false)
 const formRef = ref<HTMLElement | null>(null)
@@ -134,12 +135,14 @@ async function submitForm() {
       body: {
         email: email.value.trim(),
         siteType: siteType.value,
+        context: context.value.trim(),
       },
     })
     status.value = 'success'
     trackGenerateLead()
     email.value = ''
     siteType.value = ''
+    context.value = ''
     if (props.embedded) {
       window.setTimeout(() => closeContactDialog(), 1600)
     }
@@ -274,6 +277,37 @@ async function submitForm() {
         </ul>
       </div>
     </div>
+
+    <label class="contact-form-field">
+      <span class="contact-form-label">
+        <svg
+          class="contact-form-icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          aria-hidden="true"
+        >
+          <path
+            d="M12 11.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"
+            stroke="currentColor"
+            stroke-width="1.8"
+          />
+          <path
+            d="M19.5 10.2c0 5.2-5.3 9.3-7.1 10.5a.7.7 0 0 1-.8 0C9.8 19.5 4.5 15.4 4.5 10.2a7.5 7.5 0 0 1 15 0Z"
+            stroke="currentColor"
+            stroke-width="1.8"
+          />
+        </svg>
+        {{ $t('cta.form.context') }}
+      </span>
+      <input
+        v-model="context"
+        type="text"
+        name="context"
+        autocomplete="organization"
+        maxlength="120"
+        :placeholder="$t('cta.form.contextPlaceholder')"
+      />
+    </label>
 
     <MagneticButton
       block

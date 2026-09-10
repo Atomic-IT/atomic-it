@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const localePath = useLocalePath()
-const { t, tm, rt, locale } = useI18n()
+const { t, tm, rt } = useI18n()
 const { consent, hydrate, acceptAll, acceptNecessary } = useCookieConsent()
 
 const sections = ['what', 'types', 'manage', 'third'] as const
@@ -11,10 +11,6 @@ function paragraphs(key: (typeof sections)[number]) {
   )
   return Array.isArray(value) ? value : []
 }
-
-useHead(() => ({
-  htmlAttrs: { lang: locale.value },
-}))
 
 useSeoMeta({
   title: () => t('cookies.metaTitle'),
