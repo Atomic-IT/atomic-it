@@ -14,6 +14,7 @@ const company = {
 
 const links = computed(() => [
   { href: `${localePath('/')}#process`, label: 'nav.process' },
+  { href: `${localePath('/')}#pricing`, label: 'nav.pricing' },
   { href: `${localePath('/')}#work`, label: 'nav.work' },
   { href: `${localePath('/')}#contact`, label: 'nav.contact' },
 ])

@@ -1,10 +1,11 @@
 {
   "meta": {
-    "title": "Websites for local businesses",
-    "description": "Atomic IT builds modern websites for small businesses. Clear pricing, simple process, no tech jargon."
+    "title": "Websites for local businesses | Atomic IT (Lublin)",
+    "description": "A website that brings calls and enquiries — not just looks nice. Clear price before we start. Message us for a 20-minute chat."
   },
   "nav": {
     "process": "How we work",
+    "pricing": "Pricing",
     "work": "Result",
     "contact": "Contact",
     "quote": "Ask for a quote",
@@ -12,16 +13,16 @@
     "cookies": "Cookies"
   },
   "hero": {
-    "badge": "Websites · clear pricing · no jargon",
-    "titleLine1": "Your website.",
-    "titleLine2": "Without the stress.",
-    "lead": "Modern websites for local businesses and professionals. One person, one owner: from the first call to launch.",
+    "badge": "Websites for local businesses · price before we start",
+    "titleLine1": "A website that",
+    "titleLine2": "brings enquiries.",
+    "lead": "For clinics, salons, and neighbourhood services. One person from the first call to launch — you know the price before we begin.",
     "ctaSecondary": "Message on WhatsApp",
-    "formTitle": "Ask for a quote",
+    "formTitle": "Free quote · 20 min",
     "pills": {
-      "a": "No jargon",
-      "b": "Clear pricing",
-      "c": "Same-day reply"
+      "a": "Same-day reply",
+      "b": "Price before we start",
+      "c": "No jargon"
     }
   },
   "trusted": {
@@ -82,26 +83,76 @@
   "steps": {
     "eyebrow": "How we work",
     "title": "From the first message to a live website.",
-    "lead": "Three steps. Clear price before we start. No dragging it out.",
+    "lead": "Three steps. Price before we start. No dragging it out.",
     "ctaHint": "Free quote. No obligation.",
     "items": {
       "talk": {
         "step": "01",
-        "time": "20 minutes",
+        "time": "about 20 minutes",
         "title": "We talk",
-        "text": "A short call about your business and needs. Then you get a clear quote - no pressure."
+        "text": "A short call about your business. Then a clear quote — no pressure."
       },
       "build": {
         "step": "02",
-        "time": "Design & build",
+        "time": "usually 2–4 weeks",
         "title": "We build",
-        "text": "Design, copy, and development in one place. You see the site take shape as we go."
+        "text": "Design, copy, and code in one place. You see progress as we go."
       },
       "live": {
         "step": "03",
-        "time": "Go live",
+        "time": "launch + support",
         "title": "We launch",
-        "text": "We publish calmly and stay available when something needs changing."
+        "text": "We go live calmly. We stay after launch — updates don’t sit for months."
+      }
+    }
+  },
+  "pricing": {
+    "eyebrow": "Pricing",
+    "title": "What does it cost?",
+    "lead": "Ballpark figures to start. You get an exact quote after a short call — before any work begins.",
+    "net": "net",
+    "note": "Orientative amounts. Final quote after a 20-minute call — always before we start.",
+    "cta": "Ask for a quote",
+    "ctaAlt": "Or write below",
+    "faqTitle": "Quick price FAQ",
+    "packages": {
+      "landing": {
+        "label": "Start",
+        "name": "One-pager",
+        "price": "from PLN 2,900",
+        "for": "For businesses that need one clear page: who you are, what you do, how to get in touch.",
+        "items": {
+          "a": "1–3 pages, mobile-first",
+          "b": "Form / WhatsApp / map",
+          "c": "Basic SEO and launch",
+          "d": "Clear price before we start"
+        }
+      },
+      "company": {
+        "label": "Most chosen",
+        "name": "Business site",
+        "price": "from PLN 5,900",
+        "for": "For local firms with an offer and a goal: enquiries — not just “being online”.",
+        "items": {
+          "a": "Several pages and a clear offer",
+          "b": "Copy in an agreed scope",
+          "c": "Form, contact, Google-friendly",
+          "d": "Post-launch care on agreed terms"
+        }
+      }
+    },
+    "faq": {
+      "a": {
+        "q": "Can the price change mid-project?",
+        "a": "Only if you change the scope — and we say so before you pay anything extra."
+      },
+      "b": {
+        "q": "What’s included?",
+        "a": "Design, copy in the agreed scope, build, launch, and a short handover."
+      },
+      "c": {
+        "q": "What’s not included?",
+        "a": "Ad campaigns, e-commerce, apps, or months of book-length copywriting."
       }
     }
   },

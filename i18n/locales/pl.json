@@ -1,10 +1,11 @@
 {
   "meta": {
-    "title": "Strony WWW dla lokalnych firm",
-    "description": "Atomic IT tworzy nowoczesne strony dla małych firm. Jasna wycena, prosty proces, bez technicznego żargonu."
+    "title": "Strony WWW dla lokalnych firm | Atomic IT (Lublin)",
+    "description": "Strona, która zbiera telefony i zapytania — nie tylko „ładnie wygląda”. Jasna wycena przed startem. Napisz, umówimy 20 min."
   },
   "nav": {
     "process": "Jak działamy",
+    "pricing": "Cennik",
     "work": "Efekt",
     "contact": "Kontakt",
     "quote": "Zapytaj o wycenę",
@@ -12,16 +13,16 @@
     "cookies": "Cookies"
   },
   "hero": {
-    "badge": "Strony WWW · jasna wycena · bez żargonu",
-    "titleLine1": "Twoja strona.",
-    "titleLine2": "Bez stresu.",
-    "lead": "Nowoczesne strony dla lokalnych firm i specjalistów. Jedna osoba, jedna odpowiedzialność: od rozmowy do publikacji.",
+    "badge": "Strony WWW dla lokalnych firm · wycena przed startem",
+    "titleLine1": "Strona, która",
+    "titleLine2": "zbiera zapytania.",
+    "lead": "Dla gabinetów, salonów i usług z okolicy. Jedna osoba od rozmowy do publikacji — wiesz, ile płacisz, zanim zaczynamy.",
     "ctaSecondary": "Napisz na WhatsApp",
-    "formTitle": "Poproś o wycenę",
+    "formTitle": "Bezpłatna wycena · 20 min",
     "pills": {
-      "a": "Bez żargonu",
-      "b": "Jasna wycena",
-      "c": "Odpowiedź tego samego dnia"
+      "a": "Odpowiedź tego samego dnia",
+      "b": "Cena przed startem",
+      "c": "Bez żargonu"
     }
   },
   "trusted": {
@@ -82,26 +83,76 @@
   "steps": {
     "eyebrow": "Jak działamy",
     "title": "Od pierwszej wiadomości do działającej strony.",
-    "lead": "Trzy kroki. Cena jasna przed startem. Bez przeciągania.",
+    "lead": "Trzy kroki. Cena przed startem. Bez przeciągania.",
     "ctaHint": "Bezpłatna wycena. Bez zobowiązań.",
     "items": {
       "talk": {
         "step": "01",
-        "time": "20 minut",
+        "time": "ok. 20 minut",
         "title": "Rozmawiamy",
-        "text": "Krótka rozmowa o firmie i potrzebach. Potem dostajesz jasną wycenę - bez presji."
+        "text": "Krótka rozmowa o firmie. Potem jasna wycena — bez presji."
       },
       "build": {
         "step": "02",
-        "time": "Projekt i budowa",
+        "time": "zwykle 2–4 tygodnie",
         "title": "Budujemy",
-        "text": "Projekt, treść i realizacja w jednym miejscu. Widzisz, jak strona powstaje."
+        "text": "Projekt, treść i kod w jednym miejscu. Widzisz postęp na bieżąco."
       },
       "live": {
         "step": "03",
-        "time": "Start",
+        "time": "publikacja + opiekun",
         "title": "Startujemy",
-        "text": "Publikujemy spokojnie i zostajemy w kontakcie, gdy coś trzeba zmienić."
+        "text": "Startujemy spokojnie. Po starcie zostajemy — poprawki nie wiszą miesiącami."
+      }
+    }
+  },
+  "pricing": {
+    "eyebrow": "Cennik",
+    "title": "Ile to kosztuje?",
+    "lead": "Widełki na start. Dokładną kwotę dostajesz po krótkiej rozmowie — zanim cokolwiek zaczynamy.",
+    "net": "netto",
+    "note": "Kwoty orientacyjne. Finalna wycena po rozmowie 20 min — zawsze przed startem.",
+    "cta": "Zapytaj o wycenę",
+    "ctaAlt": "Albo napisz niżej",
+    "faqTitle": "Krótko o cenie",
+    "packages": {
+      "landing": {
+        "label": "Start",
+        "name": "Wizytówka",
+        "price": "od 2 900 zł",
+        "for": "Dla firm, które potrzebują jednej jasnej strony: kto jesteś, co robisz, jak się skontaktować.",
+        "items": {
+          "a": "1–3 podstrony, mobile-first",
+          "b": "Formularz / WhatsApp / mapa",
+          "c": "Podstawowe SEO i publikacja",
+          "d": "Jasna wycena przed startem"
+        }
+      },
+      "company": {
+        "label": "Najczęściej",
+        "name": "Strona firmowa",
+        "price": "od 5 900 zł",
+        "for": "Dla lokalnych firm z ofertą, zaufaniem i konkretnym celem: zapytania, nie tylko „bycie w sieci”.",
+        "items": {
+          "a": "Kilka podstron i jasna oferta",
+          "b": "Treść w uzgodnionym zakresie",
+          "c": "Formularz, kontakt, Google-friendly",
+          "d": "Opieka po starcie na ustalonych zasadach"
+        }
+      }
+    },
+    "faq": {
+      "a": {
+        "q": "Czy cena może się zmienić w trakcie?",
+        "a": "Tylko gdy zmieniasz zakres prac — i mówimy o tym wcześniej, zanim cokolwiek dopłacasz."
+      },
+      "b": {
+        "q": "Co jest w cenie?",
+        "a": "Projekt, treść w uzgodnionym zakresie, wdrożenie, publikacja i podstawowe przeszkolenie."
+      },
+      "c": {
+        "q": "Czego nie ma w cenie?",
+        "a": "Kampanii Ads, sklepu, aplikacji ani wielomiesięcznego copywritingu „książki o firmie”."
       }
     }
   },

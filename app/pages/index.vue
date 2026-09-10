@@ -22,6 +22,7 @@ useSeoMeta({
       <Hero />
       <Trusted />
       <Problem />
+      <Pricing />
       <Steps />
       <Work />
       <Fit />
