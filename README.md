@@ -34,6 +34,6 @@ pnpm dev
 - **TypeScript** (`vue-tsc` / `tsc`)
 - **SCSS** (global variables via Vite)
 - **anime.js** v4
-- **Biome** — lint + format
-- **Stylelint** — CSS/SCSS/Vue styles
-- **Husky** + lint-staged — pre-commit hooks
+- **Biome** - lint + format
+- **Stylelint** - CSS/SCSS/Vue styles
+- **Husky** + lint-staged - pre-commit hooks

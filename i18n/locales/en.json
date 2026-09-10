@@ -25,7 +25,7 @@
   "trusted": {
     "label": "Who we help",
     "title": "Built for people who show up in person.",
-    "lead": "Clinics, salons, workshops, law firms, local services — businesses where trust starts face to face, then continues online.",
+    "lead": "If clients walk through your door - we’re probably a fit.",
     "items": {
       "a": {
         "name": "Clinics",
@@ -46,13 +46,17 @@
       "e": {
         "name": "Local services",
         "hint": "Trades and neighborhood shops"
+      },
+      "f": {
+        "name": "Restaurants",
+        "hint": "Cafés, bistros, catering"
       }
     }
   },
   "problem": {
     "eyebrow": "The problem",
     "title": "A website done “on the side” doesn’t sell.",
-    "lead": "Too often it’s rushed, looks cheap, and nobody knows how to maintain it. You don’t need another promise — you need clear ownership.",
+    "lead": "Too often it’s rushed, looks cheap, and nobody knows how to maintain it. You don’t need another promise - you need clear ownership.",
     "beforeLabel": "Usual path",
     "afterLabel": "Atomic IT",
     "badTitle": "You’re left with the mess",
@@ -61,14 +65,14 @@
     "afterCaption": "One contact, a fixed price, and a site that brings in inquiries.",
     "bridge": "VS",
     "bad": {
-      "a": "Nobody owns the whole thing — blame gets passed around",
+      "a": "Nobody owns the whole thing - blame gets passed around",
       "b": "Pricing “we’ll see” and extras that never stop",
       "c": "You don’t know what’s happening; updates drag for weeks",
       "d": "After launch you’re alone with a cheap, dead website"
     },
     "good": {
       "a": "One person runs it from first call to launch",
-      "b": "Clear price before we start — no surprises",
+      "b": "Clear price before we start - no surprises",
       "c": "You see progress as we go, in plain language",
       "d": "We stay after launch: fast changes, a site that works"
     }
@@ -83,7 +87,7 @@
         "step": "01",
         "time": "20 minutes",
         "title": "We talk",
-        "text": "A short call about your business and needs. Then you get a clear quote — no pressure."
+        "text": "A short call about your business and needs. Then you get a clear quote - no pressure."
       },
       "build": {
         "step": "02",
@@ -102,7 +106,7 @@
   "work": {
     "eyebrow": "After launch",
     "title": "The site should ring. Not sit online.",
-    "lead": "Not a gallery of industries and pretty tiles. The moment someone nearby finds you on their phone — and actually gets in touch.",
+    "lead": "Not a gallery of industries and pretty tiles. The moment someone nearby finds you on their phone - and actually gets in touch.",
     "note": "We don’t fake other people’s case studies. We show what a website is for.",
     "beats": {
       "a": {
@@ -118,7 +122,7 @@
       "c": {
         "step": "03",
         "title": "They leave a lead",
-        "text": "They call, message, or book. You get something real — not empty “visits”."
+        "text": "They call, message, or book. You get something real - not empty “visits”."
       }
     },
     "phone": {
@@ -140,7 +144,7 @@
       "book": {
         "app": "Calendar",
         "title": "New booking",
-        "text": "Thursday · 10:00 — from the site."
+        "text": "Thursday · 10:00 - from the site."
       }
     }
   },
@@ -190,7 +194,7 @@
       },
       "submit": "Send message",
       "sending": "Sending…",
-      "success": "Thanks! Message sent — we’ll get back to you.",
+      "success": "Thanks! Message sent - we’ll get back to you.",
       "error": "Enter a valid email and choose a website type.",
       "failed": "Couldn’t send. Try again or message us on WhatsApp."
     }

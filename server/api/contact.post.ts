@@ -54,7 +54,7 @@ export default defineEventHandler(async (event) => {
       from: `Atomic IT <${to}>`,
       to: [to],
       reply_to: email,
-      subject: `Wycena — ${typeLabel}`,
+      subject: `Wycena - ${typeLabel}`,
       text: [
         'Nowe zapytanie ze strony atomic-it.site',
         '',

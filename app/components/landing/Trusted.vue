@@ -1,224 +1,153 @@
 <script setup lang="ts">
-import { animate, stagger } from 'animejs'
-
 const items = [
-  { key: 'a', image: '/images/trusted/clinics.jpg' },
-  { key: 'b', image: '/images/trusted/salons.jpg' },
-  { key: 'c', image: '/images/trusted/workshops.jpg' },
-  { key: 'd', image: '/images/trusted/law.jpg' },
-  { key: 'e', image: '/images/trusted/local.jpg' },
+  { key: 'a', image: '/images/trusted/clinics.jpg', pos: '50% 35%' },
+  { key: 'b', image: '/images/trusted/salons.jpg', pos: '50% 30%' },
+  { key: 'c', image: '/images/trusted/workshops.jpg', pos: '50% 40%' },
+  { key: 'd', image: '/images/trusted/law.jpg', pos: '50% 35%' },
+  { key: 'e', image: '/images/trusted/local.jpg', pos: '50% 45%' },
+  { key: 'f', image: '/images/trusted/restaurants.jpg', pos: '50% 40%' },
 ] as const
 
-const root = ref<HTMLElement | null>(null)
-let observer: IntersectionObserver | null = null
-
-onMounted(() => {
-  if (!root.value) return
-
-  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  const reveals = root.value.querySelectorAll<HTMLElement>('.reveal')
-  const panels = root.value.querySelectorAll<HTMLElement>('.trusted-panel')
-
-  if (reduce) {
-    reveals.forEach((el) => {
-      el.style.opacity = '1'
-      el.style.transform = 'none'
-    })
-    panels.forEach((el) => {
-      el.style.opacity = '1'
-      el.style.transform = 'none'
-    })
-    return
-  }
-
-  observer = new IntersectionObserver(
-    (entries) => {
-      const entry = entries[0]
-      if (!entry?.isIntersecting || !root.value) return
-
-      animate(reveals, {
-        opacity: [0, 1],
-        translateY: [24, 0],
-        delay: stagger(80),
-        duration: 720,
-        ease: 'outCubic',
-      })
-
-      animate(panels, {
-        opacity: [0, 1],
-        translateY: [36, 0],
-        delay: stagger(90, { start: 120 }),
-        duration: 820,
-        ease: 'outCubic',
-      })
-
-      observer?.disconnect()
-    },
-    { threshold: 0.18 }
-  )
-
-  observer.observe(root.value)
-})
-
-onBeforeUnmount(() => observer?.disconnect())
+const { root } = useAnimeReveal({ y: 28, staggerMs: 75, threshold: 0.15 })
 </script>
 
 <template>
-  <section ref="root" class="trusted" aria-labelledby="trusted-title">
-    <div class="container trusted-intro">
-      <p class="section-eyebrow reveal">{{ $t('trusted.label') }}</p>
-      <h2 id="trusted-title" class="trusted-title reveal">
-        {{ $t('trusted.title') }}
-      </h2>
-      <p class="trusted-lead reveal">{{ $t('trusted.lead') }}</p>
-    </div>
+  <section ref="root" class="section trusted" aria-labelledby="trusted-title">
+    <div class="container trusted-inner">
+      <div class="trusted-head">
+        <p class="section-eyebrow reveal">{{ $t('trusted.label') }}</p>
+        <h2 id="trusted-title" class="section-title reveal">
+          {{ $t('trusted.title') }}
+        </h2>
+        <p class="section-lead reveal">{{ $t('trusted.lead') }}</p>
+      </div>
 
-    <div class="trusted-rail" role="list">
-      <article
-        v-for="item in items"
-        :key="item.key"
-        class="trusted-panel"
-        role="listitem"
-      >
-        <img
-          class="trusted-photo"
-          :src="item.image"
-          alt=""
-          loading="lazy"
-          decoding="async"
-          width="900"
-          height="1200"
-        />
-        <div class="trusted-shade" aria-hidden="true" />
-        <div class="trusted-meta">
-          <strong>{{ $t(`trusted.items.${item.key}.name`) }}</strong>
-          <span>{{ $t(`trusted.items.${item.key}.hint`) }}</span>
-        </div>
-      </article>
+      <ul class="trusted-gallery" role="list">
+        <li
+          v-for="item in items"
+          :key="item.key"
+          class="trusted-card reveal"
+          role="listitem"
+        >
+          <figure class="trusted-figure">
+            <img
+              class="trusted-photo"
+              :src="item.image"
+              alt=""
+              loading="lazy"
+              decoding="async"
+              width="800"
+              height="1000"
+              :style="{ objectPosition: item.pos }"
+            />
+            <figcaption class="trusted-caption">
+              {{ $t(`trusted.items.${item.key}.name`) }}
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
     </div>
   </section>
 </template>
 
 <style lang="scss" scoped>
 .trusted {
-  position: relative;
   overflow: clip;
-  padding-block: $space-2xl 0;
-  background: linear-gradient(180deg, #fbfcfe 0%, #eef3fb 55%, #e8eef8 100%);
+  background: linear-gradient(180deg, #fbfcfe 0%, #f3f5f8 100%);
 
-  &-intro {
-    max-width: 40rem;
-    margin-bottom: $space-xl;
+  &-inner {
+    display: grid;
+    gap: $space-xl;
   }
 
-  &-title,
-  &-lead,
-  .section-eyebrow {
-    opacity: 0;
-  }
-
-  &-title {
-    margin: 0 0 $space-md;
-    font-size: clamp(2.2rem, 5vw, 3.4rem);
-    font-weight: 800;
-    letter-spacing: -0.05em;
-    line-height: 1.02;
-    color: $color-secondary;
-  }
-
-  &-lead {
-    margin: 0;
+  &-head {
     max-width: 34rem;
-    color: $color-fg-muted;
-    font-size: $font-size-lg;
-    line-height: 1.55;
+    text-align: left;
+
+    .section-eyebrow,
+    .section-title,
+    .section-lead {
+      margin: 0;
+    }
+
+    .section-title {
+      margin-bottom: $space-md;
+    }
   }
 
-  &-rail {
+  &-gallery {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0;
-    border-top: 1px solid rgb(15 23 42 / 10%);
+    gap: 0.85rem;
+    margin: 0;
+    padding: 0 0 0.15rem;
+    list-style: none;
 
     @include breakpoint(md) {
-      grid-template-columns: repeat(5, minmax(0, 1fr));
+      grid-template-columns: repeat(6, minmax(9.5rem, 1fr));
+      gap: 1rem;
     }
   }
 
-  &-panel {
-    position: relative;
-    z-index: 0;
-    display: grid;
-    align-content: end;
-    aspect-ratio: 1;
+  &-card {
     min-width: 0;
-    margin: 0 0 -1px;
-    padding: 1.1rem;
+  }
+
+  &-figure {
+    position: relative;
+    margin: 0;
     overflow: hidden;
-    background: #0b0d12;
-    box-shadow: inset -1px 0 0 rgb(255 255 255 / 18%);
-    opacity: 0;
-    isolation: isolate;
+    aspect-ratio: 4 / 5;
+    border-radius: 1.15rem;
+    background: #dde4ef;
+    box-shadow: 0 16px 36px rgb(7 11 20 / 10%);
+    transition:
+      transform 0.35s ease,
+      box-shadow 0.35s ease;
 
-    &:hover .trusted-photo {
-      transform: scale(1.06);
-    }
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 22px 44px rgb(7 11 20 / 14%);
 
-    @include breakpoint(md) {
-      margin: 0;
-      padding: 1.6rem;
-
-      &:last-child {
-        box-shadow: none;
+      .trusted-photo {
+        transform: scale(1.05);
       }
     }
   }
 
   &-photo {
-    position: absolute;
-    inset: -1px;
-    z-index: -2;
-    width: calc(100% + 2px);
-    height: calc(100% + 2px);
-    max-width: none;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    object-position: center 42%;
     transform: scale(1.02);
-    transition: transform 0.7s ease;
+    transition: transform 0.6s ease;
   }
 
-  &-shade {
+  &-figure::after {
+    content: '';
     position: absolute;
     inset: 0;
-    z-index: -1;
-    background:
-      linear-gradient(
-        180deg,
-        rgb(7 11 20 / 8%) 0%,
-        rgb(7 11 20 / 18%) 35%,
-        rgb(7 11 20 / 78%) 100%
-      ),
-      linear-gradient(90deg, rgb(7 11 20 / 18%) 0%, transparent 40%);
+    background: linear-gradient(
+      180deg,
+      rgb(7 11 20 / 0%) 35%,
+      rgb(7 11 20 / 18%) 62%,
+      rgb(7 11 20 / 72%) 100%
+    );
     pointer-events: none;
   }
 
-  &-meta {
-    display: grid;
-    gap: 0.25rem;
-
-    strong {
-      font-size: clamp(1.15rem, 4.2vw, 1.7rem);
-      font-weight: 800;
-      letter-spacing: -0.04em;
-      color: #fff;
-      text-shadow: 0 1px 12px rgb(0 0 0 / 25%);
-    }
-
-    span {
-      color: rgb(255 255 255 / 82%);
-      font-size: clamp(0.82rem, 2.8vw, 0.95rem);
-      font-weight: 600;
-    }
+  &-caption {
+    position: absolute;
+    right: 0.85rem;
+    bottom: 0.85rem;
+    left: 0.85rem;
+    z-index: 1;
+    color: #fff;
+    font-size: clamp(1rem, 2.8vw, 1.15rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+    text-shadow: 0 2px 16px rgb(0 0 0 / 35%);
   }
 }
 </style>

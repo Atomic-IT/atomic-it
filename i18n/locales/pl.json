@@ -25,7 +25,7 @@
   "trusted": {
     "label": "Dla kogo pracujemy",
     "title": "Dla firm, do których wchodzi się z ulicy.",
-    "lead": "Gabinety, salony, warsztaty, kancelarie, usługi lokalne — tam, gdzie zaufanie zaczyna się na żywo, a strona ma je domknąć.",
+    "lead": "Jeśli klienci przychodzą do Ciebie na miejscu - pewnie pasujemy.",
     "items": {
       "a": {
         "name": "Gabinety",
@@ -46,13 +46,17 @@
       "e": {
         "name": "Usługi lokalne",
         "hint": "Usługi i sklepy z okolicy"
+      },
+      "f": {
+        "name": "Gastronomia",
+        "hint": "Restauracje, kawiarnie, catering"
       }
     }
   },
   "problem": {
     "eyebrow": "Problem",
     "title": "Strona zrobiona „przy okazji” nie sprzedaje.",
-    "lead": "Zbyt często powstaje szybko, wygląda tanio i nikt potem nie wie, jak ją ogarnąć. Nie potrzebujesz kolejnej obietnicy — potrzebujesz jasnej odpowiedzialności.",
+    "lead": "Zbyt często powstaje szybko, wygląda tanio i nikt potem nie wie, jak ją ogarnąć. Nie potrzebujesz kolejnej obietnicy - potrzebujesz jasnej odpowiedzialności.",
     "beforeLabel": "Zwykle",
     "afterLabel": "Atomic IT",
     "badTitle": "Zostajesz z problemem",
@@ -61,14 +65,14 @@
     "afterCaption": "Jeden kontakt, stała cena i strona, która zbiera zapytania.",
     "bridge": "VS",
     "bad": {
-      "a": "Nikt nie odpowiada za całość — każdy zrzuca winę",
+      "a": "Nikt nie odpowiada za całość - każdy zrzuca winę",
       "b": "Wycena „wyjdzie w praniu” i extras bez końca",
       "c": "Nie wiesz, co się dzieje; poprawki wiszą tygodniami",
       "d": "Po publikacji zostajesz sam z tanim, martwym efektem"
     },
     "good": {
       "a": "Jedna osoba prowadzi temat od rozmowy do startu",
-      "b": "Cena jasna przed startem — bez niespodzianek",
+      "b": "Cena jasna przed startem - bez niespodzianek",
       "c": "Widzisz postęp na bieżąco i rozmawiasz po ludzku",
       "d": "Po starcie zostajemy: zmiany szybko, strona pracuje"
     }
@@ -83,7 +87,7 @@
         "step": "01",
         "time": "20 minut",
         "title": "Rozmawiamy",
-        "text": "Krótka rozmowa o firmie i potrzebach. Potem dostajesz jasną wycenę — bez presji."
+        "text": "Krótka rozmowa o firmie i potrzebach. Potem dostajesz jasną wycenę - bez presji."
       },
       "build": {
         "step": "02",
@@ -102,7 +106,7 @@
   "work": {
     "eyebrow": "Po publikacji",
     "title": "Strona ma dzwonić. Nie wisieć w internecie.",
-    "lead": "Nie galeria branż i ładnych kafelków. Moment, w którym ktoś z okolicy znajduje Cię na telefonie — i zostawia sprawę.",
+    "lead": "Nie galeria branż i ładnych kafelków. Moment, w którym ktoś z okolicy znajduje Cię na telefonie - i zostawia sprawę.",
     "note": "Nie udajemy cudzych realizacji. Pokazujemy, po co strona w ogóle istnieje.",
     "beats": {
       "a": {
@@ -118,7 +122,7 @@
       "c": {
         "step": "03",
         "title": "Zostawiają kontakt",
-        "text": "Dzwonią, piszą albo rezerwują. Ty dostajesz konkret — nie martwe „odwiedziny”."
+        "text": "Dzwonią, piszą albo rezerwują. Ty dostajesz konkret - nie martwe „odwiedziny”."
       }
     },
     "phone": {
@@ -140,7 +144,7 @@
       "book": {
         "app": "Terminarz",
         "title": "Nowy termin",
-        "text": "Czwartek · 10:00 — ze strony."
+        "text": "Czwartek · 10:00 - ze strony."
       }
     }
   },
@@ -166,7 +170,7 @@
   "cta": {
     "eyebrow": "Zacznij tutaj",
     "title": "Umów bezpłatną rozmowę 20 minut.",
-    "lead": "Pogadamy o firmie, o tym gdzie jesteś i dokąd chcesz dojść. Jeśli mogę pomóc — powiem jak. Jeśli nie — też to usłyszysz.",
+    "lead": "Pogadamy o firmie, o tym gdzie jesteś i dokąd chcesz dojść. Jeśli mogę pomóc - powiem jak. Jeśli nie - też to usłyszysz.",
     "points": {
       "a": {
         "title": "Odpowiedź w ciągu dnia",
@@ -193,7 +197,7 @@
       },
       "submit": "Wyślij wiadomość",
       "sending": "Wysyłanie…",
-      "success": "Dzięki! Wiadomość wysłana — wrócimy z odpowiedzią.",
+      "success": "Dzięki! Wiadomość wysłana - wrócimy z odpowiedzią.",
       "error": "Podaj poprawny e-mail i wybierz typ strony.",
       "failed": "Nie udało się wysłać. Spróbuj ponownie lub napisz na WhatsApp."
     }
