@@ -11,6 +11,7 @@
     "quote": "Zapytaj o wycenę",
     "menu": "Menu",
     "menuClose": "Zamknij menu",
+    "language": "Język",
     "privacy": "Polityka prywatności",
     "cookies": "Cookies"
   },
@@ -253,7 +254,7 @@
     "lead": "Pogadamy o firmie i celu strony. Jeśli pasujemy — dostaniesz wycenę. Jeśli nie — usłyszysz to wprost.",
     "points": {
       "a": {
-        "title": "Odpowiedź w ciągu dnia",
+        "title": "Odpowiedź tego samego dnia",
         "text": "Nie wisisz w kolejce"
       },
       "b": { "title": "Bez presji", "text": "Rozmowa nic nie kosztuje" },
@@ -317,7 +318,7 @@
       "data": {
         "title": "2. Jakie dane zbieramy",
         "paragraphs": [
-          "Przez formularz kontaktowy: adres e-mail oraz typ strony, której dotyczy zapytanie.",
+          "Przez formularz kontaktowy: adres e-mail, typ strony oraz opcjonalnie branża lub miasto.",
           "Techniczne dane niezbędne do działania strony: język interfejsu, ustawienia zgody na cookies, podstawowe logi serwera.",
           "Jeśli wyrazisz zgodę: dane analityczne (Microsoft Clarity) oraz marketingowe (Google Ads) — szczegóły w polityce cookies."
         ]

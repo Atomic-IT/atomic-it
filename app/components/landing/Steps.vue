@@ -41,7 +41,7 @@ const { root } = useAnimeReveal({ y: 28, staggerMs: 90 })
             <div class="steps-media">
               <img
                 :src="item.image"
-                alt=""
+                :alt="$t(`steps.items.${item.key}.title`)"
                 width="1000"
                 height="800"
                 loading="lazy"

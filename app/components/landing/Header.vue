@@ -52,6 +52,7 @@ onMounted(() => {
       </nav>
 
       <div class="header-actions">
+        <LocaleSwitch class="header-locale" />
         <MagneticButton
           compact
           class="header-cta"
@@ -96,6 +97,7 @@ onMounted(() => {
           >
             {{ $t(link.label) }}
           </a>
+          <LocaleSwitch class="header-drawer-locale" @click="closeMobileNav" />
           <MagneticButton
             block
             variant="dark"
@@ -279,6 +281,10 @@ onMounted(() => {
       margin-bottom: 0.45rem;
       border-bottom: 0;
     }
+  }
+
+  &-locale {
+    margin: 0.25rem 0 0.7rem;
   }
 }
 </style>

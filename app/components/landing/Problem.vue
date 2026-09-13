@@ -21,7 +21,7 @@ const { root } = useAnimeReveal({ y: 26, staggerMs: 75 })
           <div class="problem-media">
             <img
               src="/images/problem/before.jpg"
-              alt=""
+              :alt="$t('problem.beforeLabel')"
               width="1200"
               height="900"
               loading="lazy"
@@ -49,7 +49,7 @@ const { root } = useAnimeReveal({ y: 26, staggerMs: 75 })
           <div class="problem-media">
             <img
               src="/images/problem/after.jpg"
-              alt=""
+              :alt="$t('problem.afterLabel')"
               width="1200"
               height="900"
               loading="lazy"

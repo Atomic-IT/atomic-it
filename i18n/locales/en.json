@@ -11,6 +11,7 @@
     "quote": "Ask for a quote",
     "menu": "Menu",
     "menuClose": "Close menu",
+    "language": "Language",
     "privacy": "Privacy policy",
     "cookies": "Cookies"
   },
@@ -314,7 +315,7 @@
       "data": {
         "title": "2. What data we collect",
         "paragraphs": [
-          "Via the contact form: email address and the website type related to your enquiry.",
+          "Via the contact form: email address, website type, and optionally industry or city.",
           "Technical data needed to run the site: interface language, cookie consent settings, basic server logs.",
           "If you consent: analytics data (Microsoft Clarity) and marketing data (Google Ads) — see the cookie policy."
         ]

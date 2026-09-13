@@ -15,6 +15,8 @@ useSeoMeta({
   ogImageWidth: 1200,
   ogImageHeight: 630,
   twitterCard: 'summary_large_image',
+  twitterTitle: () => t('meta.title'),
+  twitterDescription: () => t('meta.description'),
   twitterImage: ogImage,
 })
 
