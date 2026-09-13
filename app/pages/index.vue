@@ -55,6 +55,7 @@ useHead(() => ({
     <Header />
     <main>
       <Hero />
+      <Facts />
       <Trusted />
       <Problem />
       <Pricing />

@@ -35,6 +35,15 @@
       "c": "Bez żargonu"
     }
   },
+  "facts": {
+    "aria": "Dlaczego Atomic IT",
+    "items": {
+      "a": "Lublin",
+      "b": "Odpowiedź tego samego dnia",
+      "c": "Cena przed startem",
+      "d": "Sp. z o.o. — dane w stopce"
+    }
+  },
   "trusted": {
     "label": "Dla kogo",
     "title": "Dla firm, do których wchodzi się z ulicy.",
