@@ -125,11 +125,13 @@
     "note": "Approximate amounts. Final quote after a 20-minute call — always before we start.",
     "cta": "Ask for a quote",
     "ctaAlt": "Or write below",
+    "cmsBadge": "CMS",
     "faqTitle": "Quick price FAQ",
     "packages": {
       "landing": {
         "label": "Start",
         "name": "One-pager",
+        "cta": "Ask about a one-pager",
         "price": "from PLN 2,900",
         "for": "A fast launch: a site that starts winning calls and messages — without calling a developer for every small change.",
         "items": {
@@ -143,6 +145,7 @@
       "company": {
         "label": "Most chosen",
         "name": "Business site",
+        "cta": "Ask about a business site",
         "price": "from PLN 5,900",
         "for": "A full site built for enquiries: clear offer, trust, and a panel where you update content without an agency for every tweak.",
         "items": {

@@ -48,10 +48,22 @@ function toggleFaq(key: string) {
             <li
               v-for="item in (['a', 'b', 'c', 'd', 'e'] as const)"
               :key="item"
+              :class="{ 'pricing-item-cms': item === 'c' }"
             >
+              <span v-if="item === 'c'" class="pricing-cms">
+                {{ $t('pricing.cmsBadge') }}
+              </span>
               {{ $t(`pricing.packages.${pack}.items.${item}`) }}
             </li>
           </ul>
+          <MagneticButton
+            class="pricing-card-cta"
+            :variant="pack === 'company' ? 'primary' : 'ghost'"
+            block
+            @click="openContactDialog"
+          >
+            {{ $t(`pricing.packages.${pack}.cta`) }}
+          </MagneticButton>
         </article>
       </div>
 
@@ -119,9 +131,15 @@ function toggleFaq(key: string) {
     box-shadow: 0 16px 40px rgb(7 11 20 / 5%);
 
     &-featured {
-      border-color: rgb(24 73 214 / 30%);
-      background: linear-gradient(180deg, #fff 40%, #eef4ff 100%);
-      box-shadow: 0 22px 48px rgb(24 73 214 / 12%);
+      border-color: rgb(24 73 214 / 38%);
+      background: linear-gradient(180deg, #fff 36%, #e8efff 100%);
+      box-shadow: 0 26px 52px rgb(24 73 214 / 16%);
+      outline: 2px solid rgb(24 73 214 / 18%);
+      outline-offset: 0;
+
+      @media (width < 768px) {
+        order: -1;
+      }
     }
 
     h3 {
@@ -156,6 +174,31 @@ function toggleFaq(key: string) {
         font-weight: 800;
       }
     }
+  }
+
+  &-item-cms {
+    padding: 0.45rem 0.55rem 0.45rem 1.15rem;
+    border-radius: 0.7rem;
+    background: $color-primary-muted;
+    color: $color-secondary;
+  }
+
+  &-cms {
+    display: inline-block;
+    margin-right: 0.35rem;
+    padding: 0.08rem 0.4rem;
+    border-radius: 999px;
+    background: $color-primary;
+    color: #fff;
+    font-size: 0.62rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    line-height: 1.4;
+    vertical-align: 0.08em;
+  }
+
+  &-card-cta {
+    margin-top: 0.65rem;
   }
 
   &-card-label {

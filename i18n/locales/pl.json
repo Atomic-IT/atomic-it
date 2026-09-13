@@ -125,11 +125,13 @@
     "note": "Kwoty orientacyjne. Finalna wycena po rozmowie 20 min — zawsze przed startem.",
     "cta": "Zapytaj o wycenę",
     "ctaAlt": "Albo napisz niżej",
+    "cmsBadge": "CMS",
     "faqTitle": "Krótko o cenie",
     "packages": {
       "landing": {
         "label": "Start",
         "name": "Wizytówka",
+        "cta": "Zapytaj o wizytówkę",
         "price": "od 2 900 zł",
         "for": "Szybki start: strona, która od razu zbiera telefony i wiadomości — bez czekania na programistę przy każdej zmianie.",
         "items": {
@@ -143,6 +145,7 @@
       "company": {
         "label": "Najczęściej",
         "name": "Strona firmowa",
+        "cta": "Zapytaj o stronę firmową",
         "price": "od 5 900 zł",
         "for": "Pełna strona pod zapytania: jasna oferta, zaufanie i panel, w którym aktualizujesz treści bez agencji przy każdym przecinku.",
         "items": {
