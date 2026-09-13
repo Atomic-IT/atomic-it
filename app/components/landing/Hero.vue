@@ -1,92 +1,6 @@
 <script setup lang="ts">
-import { createTimeline, stagger } from 'animejs'
-
-const brandRef = ref<HTMLElement | null>(null)
-const titleRef = ref<HTMLElement | null>(null)
-const leadRef = ref<HTMLElement | null>(null)
-const actionsRef = ref<HTMLElement | null>(null)
-const stageRef = ref<HTMLElement | null>(null)
-
 const { whatsappUrl } = useWhatsApp()
-
-onMounted(() => {
-  const nodes = [
-    brandRef.value,
-    titleRef.value,
-    leadRef.value,
-    actionsRef.value,
-    stageRef.value,
-  ]
-
-  const show = () => {
-    nodes.forEach((node) => {
-      if (node) {
-        node.style.opacity = '1'
-        node.style.transform = 'none'
-      }
-    })
-  }
-
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    show()
-    return
-  }
-
-  const lines = titleRef.value?.querySelectorAll('.hero-line') ?? []
-  const timeline = createTimeline({ defaults: { ease: 'outCubic' } })
-
-  if (brandRef.value) {
-    timeline.add(brandRef.value, {
-      opacity: [0, 1],
-      translateY: [20, 0],
-      duration: 500,
-    })
-  }
-
-  if (lines.length) {
-    timeline.add(
-      lines,
-      {
-        opacity: [0, 1],
-        translateY: [40, 0],
-        delay: stagger(100),
-        duration: 720,
-      },
-      '-=280'
-    )
-  }
-
-  const outro = [leadRef.value, actionsRef.value].filter(
-    (node): node is HTMLElement => Boolean(node)
-  )
-
-  if (outro.length) {
-    timeline.add(
-      outro,
-      {
-        opacity: [0, 1],
-        translateY: [18, 0],
-        delay: stagger(70),
-        duration: 560,
-      },
-      '-=420'
-    )
-  }
-
-  if (stageRef.value) {
-    timeline.add(
-      stageRef.value,
-      {
-        opacity: [0, 1],
-        translateY: [48, 0],
-        duration: 900,
-      },
-      '-=700'
-    )
-  }
-
-  window.setTimeout(show, 1800)
-})
+const pills = ['a', 'b', 'c'] as const
 </script>
 
 <template>
@@ -115,18 +29,24 @@ onMounted(() => {
     </div>
     <div class="container hero-grid">
       <div class="hero-copy">
-        <p ref="brandRef" class="hero-badge">{{ $t('hero.badge') }}</p>
+        <p class="hero-badge">{{ $t('hero.badge') }}</p>
 
-        <h1 ref="titleRef" class="hero-title">
+        <h1 class="hero-title">
           <span class="hero-line">{{ $t('hero.titleLine1') }}</span>
           <span class="hero-line hero-line-accent">
             {{ $t('hero.titleLine2') }}
           </span>
         </h1>
 
-        <p ref="leadRef" class="hero-lead">{{ $t('hero.lead') }}</p>
+        <p class="hero-lead">{{ $t('hero.lead') }}</p>
 
-        <div ref="actionsRef" class="hero-actions">
+        <ul class="hero-pills">
+          <li v-for="pill in pills" :key="pill">
+            {{ $t(`hero.pills.${pill}`) }}
+          </li>
+        </ul>
+
+        <div class="hero-actions">
           <MagneticButton :href="whatsappUrl" variant="primary" external>
             <WhatsAppIcon />
             {{ $t('hero.ctaSecondary') }}
@@ -135,7 +55,7 @@ onMounted(() => {
         </div>
       </div>
 
-      <div ref="stageRef" class="hero-stage">
+      <div class="hero-stage">
         <ContactForm :title="$t('hero.formTitle')" title-id="hero-form-title" />
       </div>
     </div>
@@ -355,14 +275,6 @@ onMounted(() => {
     }
   }
 
-  &-badge,
-  &-line,
-  &-lead,
-  &-actions,
-  &-stage {
-    opacity: 0;
-  }
-
   &-badge {
     display: inline-flex;
     margin: 0 0 $space-md;
@@ -400,11 +312,31 @@ onMounted(() => {
   }
 
   &-lead {
-    margin: 0 0 $space-lg;
+    margin: 0 0 $space-md;
     max-width: 34rem;
     color: #334155;
     font-size: clamp(1.1rem, 2vw, 1.3rem);
     font-weight: 500;
+  }
+
+  &-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin: 0 0 $space-lg;
+    padding: 0;
+    list-style: none;
+
+    li {
+      padding: 0.38rem 0.7rem;
+      border: 1px solid rgb(24 73 214 / 14%);
+      border-radius: 999px;
+      background: rgb(255 255 255 / 72%);
+      color: $color-secondary;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
   }
 
   &-actions {
