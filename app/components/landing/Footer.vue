@@ -2,6 +2,7 @@
 const year = new Date().getFullYear()
 const config = useRuntimeConfig()
 const localePath = useLocalePath()
+const { whatsappUrl } = useWhatsApp()
 
 const company = {
   legalName: 'Atomic IT Sp. z o.o.',
@@ -58,12 +59,8 @@ const identifiers = computed(() => [
             </a>
           </li>
           <li>
-            <a
-              :href="config.public.whatsappUrl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              WhatsApp
+            <a :href="whatsappUrl" target="_blank" rel="noopener noreferrer">
+              {{ $t('cta.whatsapp') }}
             </a>
           </li>
         </ul>

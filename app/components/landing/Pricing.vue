@@ -45,7 +45,10 @@ function toggleFaq(key: string) {
           </p>
           <p class="pricing-for">{{ $t(`pricing.packages.${pack}.for`) }}</p>
           <ul>
-            <li v-for="item in (['a', 'b', 'c', 'd'] as const)" :key="item">
+            <li
+              v-for="item in (['a', 'b', 'c', 'd', 'e'] as const)"
+              :key="item"
+            >
               {{ $t(`pricing.packages.${pack}.items.${item}`) }}
             </li>
           </ul>

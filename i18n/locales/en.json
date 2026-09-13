@@ -9,8 +9,17 @@
     "work": "After launch",
     "contact": "Contact",
     "quote": "Ask for a quote",
+    "menu": "Menu",
+    "menuClose": "Close menu",
     "privacy": "Privacy policy",
     "cookies": "Cookies"
+  },
+  "whatsapp": {
+    "prefill": "Hi, I’m interested in a website for a local business."
+  },
+  "sticky": {
+    "aria": "Quick contact",
+    "whatsapp": "WhatsApp"
   },
   "hero": {
     "badge": "Local business websites · clear price up front",
@@ -122,24 +131,26 @@
         "label": "Start",
         "name": "One-pager",
         "price": "from PLN 2,900",
-        "for": "For businesses that need one clear page: who you are, what you do, how to get in touch.",
+        "for": "A fast launch: a site that starts winning calls and messages — without calling a developer for every small change.",
         "items": {
-          "a": "1–3 pages, mobile-first",
-          "b": "Form / WhatsApp / map",
-          "c": "Basic SEO and launch",
-          "d": "Clear price before we start"
+          "a": "1–3 phone-first pages: offer, trust, contact",
+          "b": "Form, WhatsApp and map — tap and they call",
+          "c": "CMS so you edit copy, photos and contact details yourself",
+          "d": "Launch + basic SEO (Google and Maps)",
+          "e": "Short training — edit without the jargon"
         }
       },
       "company": {
         "label": "Most chosen",
         "name": "Business site",
         "price": "from PLN 5,900",
-        "for": "For local firms with an offer and a goal: enquiries — not just “being online”.",
+        "for": "A full site built for enquiries: clear offer, trust, and a panel where you update content without an agency for every tweak.",
         "items": {
-          "a": "Several pages and a clear offer",
-          "b": "Copy in an agreed scope",
-          "c": "Form, contact, Google-friendly",
-          "d": "Post-launch care on agreed terms"
+          "a": "Several pages: offer, about, services, contact",
+          "b": "Copy written for your customers (agreed scope)",
+          "c": "CMS to edit content, prices, hours and photos",
+          "d": "Forms, contact paths and Google-friendly layout",
+          "e": "Post-launch care + panel training"
         }
       }
     },
@@ -150,7 +161,7 @@
       },
       "b": {
         "q": "What’s included?",
-        "a": "Design, copy in the agreed scope, build, launch, and a short handover."
+        "a": "Design, copy in the agreed scope, build, a CMS to edit content, launch, and a short panel handover."
       },
       "c": {
         "q": "What’s not included?",

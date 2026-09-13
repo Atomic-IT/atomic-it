@@ -9,8 +9,17 @@
     "work": "Po starcie",
     "contact": "Kontakt",
     "quote": "Zapytaj o wycenę",
+    "menu": "Menu",
+    "menuClose": "Zamknij menu",
     "privacy": "Polityka prywatności",
     "cookies": "Cookies"
+  },
+  "whatsapp": {
+    "prefill": "Cześć, interesuje mnie strona WWW dla lokalnej firmy."
+  },
+  "sticky": {
+    "aria": "Szybki kontakt",
+    "whatsapp": "WhatsApp"
   },
   "hero": {
     "badge": "Strony WWW dla lokalnych firm · wycena przed startem",
@@ -122,24 +131,26 @@
         "label": "Start",
         "name": "Wizytówka",
         "price": "od 2 900 zł",
-        "for": "Dla firm, które potrzebują jednej jasnej strony: kto jesteś, co robisz, jak się skontaktować.",
+        "for": "Szybki start: strona, która od razu zbiera telefony i wiadomości — bez czekania na programistę przy każdej zmianie.",
         "items": {
-          "a": "1–3 podstrony, mobile-first",
-          "b": "Formularz / WhatsApp / mapa",
-          "c": "Podstawowe SEO i publikacja",
-          "d": "Jasna wycena przed startem"
+          "a": "1–3 podstrony pod telefon: oferta, zaufanie, kontakt",
+          "b": "Formularz, WhatsApp i mapa — klik i dzwonią",
+          "c": "CMS: sam zmieniasz teksty, zdjęcia i dane kontaktowe",
+          "d": "Publikacja + podstawowe SEO (Google i mapy)",
+          "e": "Krótkie szkolenie — edytujesz bez żargonu"
         }
       },
       "company": {
         "label": "Najczęściej",
         "name": "Strona firmowa",
         "price": "od 5 900 zł",
-        "for": "Dla lokalnych firm z ofertą, zaufaniem i konkretnym celem: zapytania, nie tylko „bycie w sieci”.",
+        "for": "Pełna strona pod zapytania: jasna oferta, zaufanie i panel, w którym aktualizujesz treści bez agencji przy każdym przecinku.",
         "items": {
-          "a": "Kilka podstron i jasna oferta",
-          "b": "Treść w uzgodnionym zakresie",
-          "c": "Formularz, kontakt, Google-friendly",
-          "d": "Opieka po starcie na ustalonych zasadach"
+          "a": "Kilka podstron: oferta, o nas, usługi, kontakt",
+          "b": "Treść napisana pod Twoich klientów (w uzgodnionym zakresie)",
+          "c": "CMS do edycji treści, cennika, godzin i zdjęć",
+          "d": "Formularz, kontakt i układ przyjazny Google",
+          "e": "Opieka po starcie + szkolenie z panelu"
         }
       }
     },
@@ -150,7 +161,7 @@
       },
       "b": {
         "q": "Co jest w cenie?",
-        "a": "Projekt, treść w uzgodnionym zakresie, wdrożenie, publikacja i podstawowe przeszkolenie."
+        "a": "Projekt, treść w uzgodnionym zakresie, wdrożenie, CMS do edycji treści, publikacja i krótkie przeszkolenie z panelu."
       },
       "c": {
         "q": "Czego nie ma w cenie?",

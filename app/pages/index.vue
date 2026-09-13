@@ -64,6 +64,7 @@ useHead(() => ({
       <Cta />
     </main>
     <Footer />
+    <StickyCta />
   </div>
 </template>
 
@@ -71,5 +72,9 @@ useHead(() => ({
 .landing {
   min-height: 100vh;
   overflow-x: clip;
+
+  @media (width < 768px) {
+    padding-bottom: 4.75rem;
+  }
 }
 </style>

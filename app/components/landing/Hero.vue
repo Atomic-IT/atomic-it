@@ -1,14 +1,13 @@
 <script setup lang="ts">
 import { createTimeline, stagger } from 'animejs'
 
-const config = useRuntimeConfig()
 const brandRef = ref<HTMLElement | null>(null)
 const titleRef = ref<HTMLElement | null>(null)
 const leadRef = ref<HTMLElement | null>(null)
 const actionsRef = ref<HTMLElement | null>(null)
 const stageRef = ref<HTMLElement | null>(null)
 
-const whatsappUrl = computed(() => config.public.whatsappUrl as string)
+const { whatsappUrl } = useWhatsApp()
 
 onMounted(() => {
   const nodes = [

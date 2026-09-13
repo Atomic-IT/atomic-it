@@ -1,8 +1,6 @@
 <script setup lang="ts">
-const config = useRuntimeConfig()
 const { root } = useAnimeReveal()
-
-const whatsappUrl = computed(() => config.public.whatsappUrl as string)
+const { whatsappUrl } = useWhatsApp()
 const points = ['a', 'b', 'c'] as const
 </script>
 
