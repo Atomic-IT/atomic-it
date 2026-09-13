@@ -33,7 +33,7 @@ const { root } = useAnimeReveal({ y: 24, staggerMs: 80 })
       </div>
 
       <div class="work-stage reveal">
-        <p class="work-hint">{{ $t('work.phone.hint') }}</p>
+        <p class="work-hint">{{ $t('work.phone.example') }}</p>
         <div class="work-phone" aria-hidden="true">
           <div class="work-bezel">
             <div class="work-screen">

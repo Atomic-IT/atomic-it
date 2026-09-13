@@ -77,6 +77,7 @@
     "goodTitle": "Dostajesz wynik",
     "beforeCaption": "Wielu ludzi, mglista cena i strona, która nic nie sprzedaje.",
     "afterCaption": "Jeden kontakt, cena znana przed startem, strona zbiera zapytania.",
+    "pricingLink": "Zobacz orientacyjny cennik",
     "bridge": "VS",
     "bad": {
       "a": "Nikt nie odpowiada za całość - każdy zrzuca winę",
@@ -196,6 +197,7 @@
     },
     "phone": {
       "hint": "Na Twoim telefonie",
+      "example": "Przykład — tak może wyglądać dzień po starcie",
       "time": "12:41",
       "date": "Dziś po południu"
     },

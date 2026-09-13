@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const localePath = useLocalePath()
 const bad = ['a', 'b', 'c', 'd'] as const
 const good = ['a', 'b', 'c', 'd'] as const
 const { root } = useAnimeReveal({ y: 26, staggerMs: 75 })
@@ -59,6 +60,12 @@ const { root } = useAnimeReveal({ y: 26, staggerMs: 75 })
           <div class="problem-body">
             <h3>{{ $t('problem.goodTitle') }}</h3>
             <p class="problem-caption">{{ $t('problem.afterCaption') }}</p>
+            <a
+              class="problem-pricing-link"
+              :href="`${localePath('/')}#pricing`"
+            >
+              {{ $t('problem.pricingLink') }}
+            </a>
             <ul>
               <li v-for="item in good" :key="item">
                 <span class="problem-mark" aria-hidden="true">✓</span>
@@ -86,6 +93,20 @@ const { root } = useAnimeReveal({ y: 26, staggerMs: 75 })
     position: relative;
     display: grid;
     gap: $space-md;
+
+    @media (width < 768px) {
+      .problem-side-good {
+        order: 1;
+      }
+
+      .problem-bridge {
+        order: 2;
+      }
+
+      .problem-side-bad {
+        order: 3;
+      }
+    }
 
     @include breakpoint(md) {
       grid-template-columns: 1fr 1fr;
@@ -200,6 +221,14 @@ const { root } = useAnimeReveal({ y: 26, staggerMs: 75 })
     line-height: 1.5;
   }
 
+  &-pricing-link {
+    color: $color-primary;
+    font-size: 0.95rem;
+    font-weight: 800;
+    text-decoration: underline;
+    text-underline-offset: 0.16em;
+  }
+
   &-side ul {
     display: grid;
     gap: 0.45rem;
@@ -232,34 +261,41 @@ const { root } = useAnimeReveal({ y: 26, staggerMs: 75 })
   }
 
   &-bridge {
-    display: none;
-    position: absolute;
-    inset: 0;
+    display: flex;
+    justify-content: center;
     z-index: 2;
     pointer-events: none;
 
     span {
-      position: absolute;
-      top: 50%;
-      left: 50%;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 3.2rem;
-      height: 3.2rem;
+      width: 2.6rem;
+      height: 2.6rem;
       border: 4px solid #fff;
       border-radius: 50%;
       background: $color-primary;
       color: #fff;
-      font-size: 0.78rem;
+      font-size: 0.72rem;
       font-weight: 800;
       letter-spacing: 0.04em;
       box-shadow: 0 14px 32px rgb(24 73 214 / 32%);
-      transform: translate(-50%, -50%);
     }
 
     @include breakpoint(md) {
+      position: absolute;
+      inset: 0;
       display: block;
+
+      span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 3.2rem;
+        height: 3.2rem;
+        font-size: 0.78rem;
+        transform: translate(-50%, -50%);
+      }
     }
   }
 }

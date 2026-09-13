@@ -162,9 +162,9 @@ const { root } = useAnimeReveal({ y: 28, staggerMs: 90 })
   &-time {
     margin: 0.35rem 0 0;
     color: $color-primary;
-    font-size: 0.82rem;
+    font-size: 0.95rem;
     font-weight: 800;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
   }
 

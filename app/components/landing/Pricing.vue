@@ -135,7 +135,6 @@ function toggleFaq(key: string) {
       background: linear-gradient(180deg, #fff 36%, #e8efff 100%);
       box-shadow: 0 26px 52px rgb(24 73 214 / 16%);
       outline: 2px solid rgb(24 73 214 / 18%);
-      outline-offset: 0;
 
       @media (width < 768px) {
         order: -1;

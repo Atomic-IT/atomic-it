@@ -33,7 +33,7 @@ const { root } = useAnimeReveal({ y: 28, staggerMs: 75, threshold: 0.15 })
             <img
               class="trusted-photo"
               :src="item.image"
-              alt=""
+              :alt="$t(`trusted.items.${item.key}.name`)"
               loading="lazy"
               decoding="async"
               width="800"
@@ -41,7 +41,8 @@ const { root } = useAnimeReveal({ y: 28, staggerMs: 75, threshold: 0.15 })
               :style="{ objectPosition: item.pos }"
             />
             <figcaption class="trusted-caption">
-              {{ $t(`trusted.items.${item.key}.name`) }}
+              <strong>{{ $t(`trusted.items.${item.key}.name`) }}</strong>
+              <small>{{ $t(`trusted.items.${item.key}.hint`) }}</small>
             </figcaption>
           </figure>
         </li>
@@ -145,20 +146,37 @@ const { root } = useAnimeReveal({ y: 28, staggerMs: 75, threshold: 0.15 })
     left: 0.85rem;
     z-index: 1;
     color: #fff;
-    font-size: clamp(1rem, 2.8vw, 1.15rem);
-    font-weight: 800;
-    letter-spacing: -0.03em;
-    line-height: 1.15;
     text-shadow: 0 2px 16px rgb(0 0 0 / 35%);
+
+    strong,
+    small {
+      display: block;
+    }
+
+    strong {
+      font-size: clamp(1rem, 2.8vw, 1.15rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+    }
+
+    small {
+      margin-top: 0.2rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 1.3;
+      opacity: 0.86;
+    }
   }
 
   &-note {
     margin: 0;
-    max-width: 36rem;
+    max-width: 32rem;
     color: $color-fg-muted;
-    font-size: 0.95rem;
+    font-size: 0.82rem;
     font-weight: 600;
-    line-height: 1.45;
+    line-height: 1.4;
   }
 }
 </style>

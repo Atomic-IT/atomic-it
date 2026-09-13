@@ -77,6 +77,7 @@
     "goodTitle": "You get a working result",
     "beforeCaption": "Too many people, a fuzzy price, and a site that never sells.",
     "afterCaption": "One contact, price agreed before we start, a site that brings enquiries.",
+    "pricingLink": "See ballpark pricing",
     "bridge": "VS",
     "bad": {
       "a": "Nobody owns the whole thing — blame gets passed around",
@@ -196,6 +197,7 @@
     },
     "phone": {
       "hint": "On your phone",
+      "example": "Example — how the day after launch can look",
       "time": "12:41",
       "date": "This afternoon"
     },

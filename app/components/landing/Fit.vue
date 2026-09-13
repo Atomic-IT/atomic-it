@@ -57,6 +57,12 @@ const { root } = useAnimeReveal({ y: 24, staggerMs: 80 })
     gap: $space-md;
     margin-top: $space-xl;
 
+    @media (width < 768px) {
+      .fit-col-yes {
+        order: -1;
+      }
+    }
+
     @include breakpoint(md) {
       grid-template-columns: 1fr 1fr;
       gap: 1.25rem;

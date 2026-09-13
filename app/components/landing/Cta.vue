@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const localePath = useLocalePath()
 const { root } = useAnimeReveal()
 const { whatsappUrl } = useWhatsApp()
 const points = ['a', 'b', 'c'] as const
@@ -32,7 +33,7 @@ const points = ['a', 'b', 'c'] as const
             {{ $t('cta.whatsapp') }}
           </MagneticButton>
           <p class="cta-whatsapp-hint">{{ $t('cta.whatsappHint') }}</p>
-          <a class="cta-pricing-link" href="#pricing">
+          <a class="cta-pricing-link" :href="`${localePath('/')}#pricing`">
             {{ $t('cta.pricingLink') }}
           </a>
         </div>
